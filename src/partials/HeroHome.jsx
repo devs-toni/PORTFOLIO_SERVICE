@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Modal from '../utils/Modal';
 import { useLanguage } from '../context/LanguageContext';
 import HeroImage from '../images/hero-image-01.jpg';
+import meImage from '../images/me-dark.png';
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -33,29 +34,24 @@ function HeroHome() {
           </svg>
         </div>
 
-        <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">
-              Antonio Rufino Casasus
-            </h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
-              Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
-            </p>
-            <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">
-                  Start free trial
-                </a>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="600">
-                <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">
-                  Learn more
-                </a>
-              </div>
+        <div className="relative pt-32 pb-10 md:pt-20 md:pb-16 text-center">
+          <p className="sm:text-xl text-purple-500 mt-1 md:text-left md:pl-24 mb-4" data-aos="fade-up" data-aos-delay="200">
+            Antonio Rufino Casasus
+          </p>
+          <div className="max-w-4xl mx-auto text-center pb-12 md:pb-16 md:flex items-baseline">
+            <div className='md:text-left'>
+              <p className="text-3xl sm:text-8xl sm:mb-3 font-semibold italic" data-aos="fade-up">
+                {text.cover.section}
+              </p>
+              <p className="text-3xl sm:text-8xl mb-4 sm:mb-10 font-black" data-aos="fade-up">
+                {text.cover.work}
+              </p>
+            </div>
+            <div>
+              <img src={meImage} alt="Me" />
             </div>
           </div>
 
-          {/* Hero image */}
           <div>
             <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
               <img className="mx-auto" src={HeroImage} width="1024" height="504" alt="Hero" />
