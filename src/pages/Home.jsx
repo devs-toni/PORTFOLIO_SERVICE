@@ -4,7 +4,7 @@ import Header from '../partials/Header';
 import PageIllustration from '../partials/PageIllustration';
 import Title from '../partials/Title';
 import Skills from '../partials/Skills';
-import FeaturesZigZag from '../partials/FeaturesZigzag';
+import Projects from '../partials/Projects';
 import Testimonials from '../partials/Testimonials';
 import Newsletter from '../partials/Newsletter';
 import Banner from '../partials/Banner';
@@ -20,7 +20,7 @@ function Home() {
         </div>
         <Title />
         <Skills />
-        <FeaturesZigZag />
+        <Projects />
         <Testimonials />
         <Newsletter />
       </main>

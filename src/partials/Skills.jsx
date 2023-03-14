@@ -22,7 +22,7 @@ function Skills() {
               <h2 className="text-4xl sm:text-6xl font-semibold italic mb-4 xl:text-8xl md:text-right">{text.skills.title}</h2>
             </div>
 
-            <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
+            <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
               {
                 skills &&
                 skills.map(({ img, format, name, description }) => {
