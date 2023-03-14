@@ -1,9 +1,21 @@
 {
   "db": {
-    "skills": {
-      "img": "java.png",
-      "name": "Java",
-      "description": "Curso de Java"
-    }
+    "skills": [
+      {
+        "img": "java",
+        "name": "Java",
+        "description": "Curso de Java"
+      },
+      {
+        "img": "php",
+        "name": "PHP",
+        "description": "Curso de PHP"
+      },
+      {
+        "img": "js",
+        "name": "Javascript",
+        "description": "Curso de Javascript"
+      }
+    ]
   }
 }

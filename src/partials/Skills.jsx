@@ -1,9 +1,15 @@
+import { useState } from "react";
+import uuid from "react-uuid";
+import { useGlobal } from "../context/GlobalContext";
 import { useLanguage } from "../context/LanguageContext";
 import Skill from './specific/Skill';
 
 function Skills() {
 
   const { text } = useLanguage();
+  const { database } = useGlobal();
+
+  const [skills, setSkills] = useState(database.skills)
 
   return (
     <section>
@@ -17,12 +23,14 @@ function Skills() {
             </div>
 
             <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
-              <Skill />
-              <Skill />
-              <Skill />
-              <Skill />
-              <Skill />
-              <Skill />
+              {
+                skills &&
+                skills.map(({ img, format, name, description }) => {
+                  return (
+                    <Skill key={uuid()} img={img} ext={format} name={name} description={description} />
+                  )
+                })
+              }
             </div>
           </div>
         </div>

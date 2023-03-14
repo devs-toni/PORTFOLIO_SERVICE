@@ -7,6 +7,7 @@ export default defineConfig({
   define: {
     'process.env': process.env
   },
+
   css: {
     postcss,
   },
@@ -19,11 +20,11 @@ export default defineConfig({
           return val.replace(/^~/, "");
         },
       },
-    ],
+    ]
   },
   build: {
     commonjsOptions: {
       transformMixedEsModules: true,
     }
-  } 
+  }
 })

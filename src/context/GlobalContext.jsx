@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import Db from '../Database.json';
 
 
@@ -11,8 +11,6 @@ export const useGlobal = () => {
 const GlobalProvider = ({ children }) => {
 
   const [database, setDatabase] = useState(Db['db']);
-
-
 
   const data = {
     database
