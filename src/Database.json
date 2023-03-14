@@ -1,0 +1,9 @@
+{
+  "db": {
+    "skills": {
+      "img": "java.png",
+      "name": "Java",
+      "description": "Curso de Java"
+    }
+  }
+}

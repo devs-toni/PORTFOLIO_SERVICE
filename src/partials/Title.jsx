@@ -1,18 +1,14 @@
-import React, { useState } from 'react';
-import Modal from '../utils/Modal';
 import { useLanguage } from '../context/LanguageContext';
-import HeroImage from '../images/hero-image-01.jpg';
 import meImage from '../images/me-dark.png';
-import Skill from './specific/Skill';
+import About from './specific/About';
 
 function Title() {
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
-  const { text } = useLanguage();
 
+  const { text } = useLanguage();
 
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+      <div className="max-w-6xl mx-auto px-4 relative sm:px-6 xl:max-w-5xl">
         <div
           className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none"
           aria-hidden="true"
@@ -36,11 +32,11 @@ function Title() {
         </div>
 
         <div className="relative pt-32 pb-10 md:pt-20 md:pb-16 text-center">
-          <p className="text-xl sm:text-2xl text-purple-500 mt-1 md:text-left md:pl-24 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <p className="text-center text-xl sm:text-2xl text-purple-500 mt-1 md:text-left md:pl-24" data-aos="fade-up" data-aos-delay="200">
             Antonio Rufino Casasus
           </p>
           <div className="max-w-4xl md:max-w-5xl mx-auto text-center pb-4 md:pb-8 md:flex items-baseline">
-            <div className='md:text-left pl-10 xl:pl-0'>
+            <div className='md:text-left md:pl-5 xl:pl-0'>
               <p className="text-5xl sm:text-6xl xl:text-8xl md:mb-3 font-semibold italic" data-aos="fade-up">
                 {text.cover.section}
               </p>
@@ -52,20 +48,7 @@ function Title() {
               <img src={meImage} alt="Me" />
             </div>
           </div>
-
-
-          <div className="xl:max-w-5xl mx-auto text-center pb-12 md:pb-20 md:pr-10 xl:pr-0">
-            <h2 className="text-4xl sm:text-6xl font-semibold italic mb-4 xl:text-8xl md:text-right">{text.skills.title}</h2>
-          </div>
-
-          <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
-            <Skill />
-            <Skill />
-            <Skill />
-            <Skill />
-            <Skill />
-            <Skill />
-          </div>
+          <About />
         </div>
       </div>
     </section>

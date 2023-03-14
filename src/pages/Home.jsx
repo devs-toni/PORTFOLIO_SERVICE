@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../partials/Header';
 import PageIllustration from '../partials/PageIllustration';
 import Title from '../partials/Title';
-import About from '../partials/About';
+import Skills from '../partials/Skills';
 import FeaturesZigZag from '../partials/FeaturesZigzag';
 import Testimonials from '../partials/Testimonials';
 import Newsletter from '../partials/Newsletter';
@@ -19,7 +19,7 @@ function Home() {
           <PageIllustration />
         </div>
         <Title />
-        <About />
+        <Skills />
         <FeaturesZigZag />
         <Testimonials />
         <Newsletter />
