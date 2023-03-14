@@ -3,8 +3,9 @@ import Modal from '../utils/Modal';
 import { useLanguage } from '../context/LanguageContext';
 import HeroImage from '../images/hero-image-01.jpg';
 import meImage from '../images/me-dark.png';
+import Skill from './specific/Skill';
 
-function HeroHome() {
+function Title() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
   const { text } = useLanguage();
 
@@ -38,7 +39,7 @@ function HeroHome() {
           <p className="text-xl sm:text-2xl text-purple-500 mt-1 md:text-left md:pl-24 mb-4" data-aos="fade-up" data-aos-delay="200">
             Antonio Rufino Casasus
           </p>
-          <div className="max-w-4xl md:max-w-5xl mx-auto text-center pb-12 md:pb-16 md:flex items-baseline">
+          <div className="max-w-4xl md:max-w-5xl mx-auto text-center pb-4 md:pb-8 md:flex items-baseline">
             <div className='md:text-left pl-10 xl:pl-0'>
               <p className="text-5xl sm:text-6xl xl:text-8xl md:mb-3 font-semibold italic" data-aos="fade-up">
                 {text.cover.section}
@@ -52,22 +53,18 @@ function HeroHome() {
             </div>
           </div>
 
-          <div className='sm:p-7'>
-            <div className='flex flex-col p-3 justify-center'>
-              <div className='flex flex-col md:flex-row mb-10'>
-                <div className='mb-5 container text-center md:text-left flex justify-center md:justify-start j mr-8 md:mr-40'>
-                  <p className='mr-3 font-medium italic text-3xl text-center sm:text-left sm:text-4xl'>{text.about.title}</p>
-                  <p className='font-black text-3xl sm:text-4xl'>{text.about.title_me}</p>
-                </div>
-                <div className='sm:max-w-xl flex justify-center'>
-                  <p className='md:text-left '>{text.about.description}</p>
-                </div>
-              </div>
-              <div className='container md:max-w-sm text-center md:text-left'>
-                <span className='font-semibold mr-1'>"{text.about.conclusion}"</span>
-                {text.about.slogan}
-              </div>
-            </div>
+
+          <div className="xl:max-w-5xl mx-auto text-center pb-12 md:pb-20 md:pr-10 xl:pr-0">
+            <h2 className="text-4xl sm:text-6xl font-semibold italic mb-4 xl:text-8xl md:text-right">{text.skills.title}</h2>
+          </div>
+
+          <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
+            <Skill />
+            <Skill />
+            <Skill />
+            <Skill />
+            <Skill />
+            <Skill />
           </div>
         </div>
       </div>
@@ -75,4 +72,4 @@ function HeroHome() {
   );
 }
 
-export default HeroHome;
+export default Title;

@@ -2,8 +2,8 @@ import React from 'react';
 
 import Header from '../partials/Header';
 import PageIllustration from '../partials/PageIllustration';
-import HeroHome from '../partials/HeroHome';
-import FeaturesBlocks from '../partials/FeaturesBlocks';
+import Title from '../partials/Title';
+import About from '../partials/About';
 import FeaturesZigZag from '../partials/FeaturesZigzag';
 import Testimonials from '../partials/Testimonials';
 import Newsletter from '../partials/Newsletter';
@@ -18,8 +18,8 @@ function Home() {
         <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
           <PageIllustration />
         </div>
-        <HeroHome />
-        <FeaturesBlocks />
+        <Title />
+        <About />
         <FeaturesZigZag />
         <Testimonials />
         <Newsletter />
