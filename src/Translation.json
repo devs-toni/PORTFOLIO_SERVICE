@@ -16,7 +16,39 @@
     },
     "works": {
       "title": "Works"
+    },
+    "opinions": {
+      "title": "Reviews",
+      "description": "Si no me crees, solo tienes que echas un vistazo a las opiniones de compañeros con los que he trabajado"
+    },
+    "contact": {
+      "title": "Contacta Conmigo"
     }
   },
-  "en": {}
+  "en": {
+    "cover": {
+      "section": "Full Stack",
+      "work": "Developer"
+    },
+    "about": {
+      "title": "About",
+      "title_me": "me",
+      "description": "Nací en l'Alcúdia, un pueblo cercano a Valencia, donde he vivido casi todas mis experiencias hasta la adolescencia, donde decidí formarme en el mundo tecnológico en Valencia obteniendo así mi título superior. Trabajé en una empresa como técnico de sonido en Valencia durante aproximadamente 5 años. Finalmente decidí seguir formandome en tecnologías y acepté que mi destino está ligado a pasar largas y largas horas delante de la pantalla aprendiendo y picando código. Me mudé a Alicante y desde aquí empezé a estudiar programación. Basta decir que soy una persona con orígenes humildes, he sido educado para ser una persona cercana y honesta, a la vez que sencilla y competitiva, por lo que trabajar en equipo siempre me ha resultado fácil y satisfactorio.",
+      "conclusion": "Concluyendo",
+      "slogan": " Ha sido una de las mejores decisiones que he tomado. Falta decir que estoy muy entusiasmado por empezar mi primer trabajo y demostrar mi valía, a la vez que me gustaría seguir aprendiendo para no dejar de crecer."
+    },
+    "skills": {
+      "title": "Skills"
+    },
+    "works": {
+      "title": "Works"
+    },
+    "opinions": {
+      "title": "Reviews",
+      "description": "Si no me crees, solo tienes que echas un vistazo a las opiniones de compañeros con los que he trabajado"
+    },
+    "contact": {
+      "title": "Contacta Conmigo"
+    }
+  }
 }

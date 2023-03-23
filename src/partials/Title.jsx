@@ -35,7 +35,7 @@ function Title() {
           <p className="text-center text-xl sm:text-2xl text-purple-500 mt-1 md:text-left md:pl-24" data-aos="fade-up" data-aos-delay="200">
             Antonio Rufino Casasus
           </p>
-          <div className="max-w-4xl md:max-w-5xl mx-auto text-center pb-4 md:pb-8 md:flex items-baseline">
+          <div className="max-w-4xl md:max-w-5xl mx-auto text-center pb-4 md:pb-8 md:flex items-baseline mt-10">
             <div className='md:text-left md:pl-5 xl:pl-0'>
               <p className="text-5xl sm:text-6xl xl:text-8xl md:mb-3 font-semibold italic" data-aos="fade-up">
                 {text.cover.section}
