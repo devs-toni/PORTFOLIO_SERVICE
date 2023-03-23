@@ -9,7 +9,7 @@ export const useLanguage = () => {
 
 const LanguageProvider = ({ children }) => {
 
-  const [lang, setLang] = useState('es');
+  const [lang, setLang] = useState('en');
   const [text, setText] = useState(tranlations[lang]);
 
   const handleLanguage = (e) => { }

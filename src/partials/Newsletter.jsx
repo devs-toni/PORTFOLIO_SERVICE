@@ -6,7 +6,7 @@ function Newsletter() {
   const { text } = useLanguage();
 
   return (
-    <section className='pt-24 h-5/6'>
+    <section className='pt-24 h-4/6 w-5/6 m-auto border border-b-1 border-t-0 border-r-0 border-l-0 border-gray-100 border-opacity-20'>
       <div className="max-w-6xl m-auto px-4 sm:px-6">
         <div className="max-w-5xl mx-auto text-center md:pb-16">
           <h1 className="text-5xl sm:text-7xl xl:text-9xl -ml-10 mb-20 font-bold md:text-left">{text.contact.first}</h1>

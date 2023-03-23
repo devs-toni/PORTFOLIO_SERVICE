@@ -7,7 +7,7 @@ function Footer() {
   const {text} = useLanguage();
   
   return (
-    <footer className=''>
+    <footer className='h-full pt-64'>
       <div className="-mt-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
