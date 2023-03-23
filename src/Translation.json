@@ -22,15 +22,21 @@
       "description": "Si no me crees, solo tienes que echas un vistazo a las opiniones de compañeros con los que he trabajado"
     },
     "contact": {
+      "first": "Contacto",
       "title": "Contacta Conmigo",
       "description": "Por favor, contacta conmigo mediante el formulario o a través de cualquier otro método de contacto que te proporciono si tienes cualquier duda, inquietud o proposición",
       "email": "Introduce tu email",
+      "msg": "Introduce tu mensaje",
       "send": "Enviar"
     },
     "banner": {
       "download": "Descarga",
       "cv": " mi Currículum",
       "linkin": "Visita mi LinkedIn"
+    },
+    "footer": {
+      "description": "Página web desarrollada por Antonio Rufino Casasus, MIT License.",
+      "works": "Works"
     }
   },
   "en": {
@@ -56,15 +62,21 @@
       "description": "Si no me crees, solo tienes que echas un vistazo a las opiniones de compañeros con los que he trabajado"
     },
     "contact": {
+      "first": "Contact",
       "title": "Contacta Conmigo",
       "description": "Por favor, contacta conmigo mediante el formulario o a través de cualquier otro método de contacto que te proporciono si tienes cualquier duda, inquietud o proposición",
       "email": "Enter your email",
+      "msg": "Enter your message",
       "send": "Send"
     },
     "banner": {
       "download": "Download",
       "cv": " my Currículum",
       "linkin": "Visit my LinkedIn"
+    },
+    "footer": {
+      "description": "Webpage developed by Antonio Rufino Casasus, MIT License.",
+      "works": "Works"
     }
   }
 }

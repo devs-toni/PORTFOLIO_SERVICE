@@ -15,7 +15,7 @@ function Projects() {
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-screen p-14">
         <div className="max-w-5xl mx-auto text-center py-12 md:pb-16">
-          <h1 className="text-4xl sm:text-6xl xl:text-8xl mb-4 font-bold md:text-left">{text.works.title}</h1>
+          <h1 className="text-5xl sm:text-7xl xl:text-9xl -ml-10 mb-4 font-bold md:text-left">{text.works.title}</h1>
         </div>
       </div>
       <section>
