@@ -22,7 +22,15 @@
       "description": "Si no me crees, solo tienes que echas un vistazo a las opiniones de compañeros con los que he trabajado"
     },
     "contact": {
-      "title": "Contacta Conmigo"
+      "title": "Contacta Conmigo",
+      "description": "Por favor, contacta conmigo mediante el formulario o a través de cualquier otro método de contacto que te proporciono si tienes cualquier duda, inquietud o proposición",
+      "email": "Introduce tu email",
+      "send": "Enviar"
+    },
+    "banner": {
+      "download": "Descarga",
+      "cv": " mi Currículum",
+      "linkin": "Visita mi LinkedIn"
     }
   },
   "en": {
@@ -48,7 +56,15 @@
       "description": "Si no me crees, solo tienes que echas un vistazo a las opiniones de compañeros con los que he trabajado"
     },
     "contact": {
-      "title": "Contacta Conmigo"
+      "title": "Contacta Conmigo",
+      "description": "Por favor, contacta conmigo mediante el formulario o a través de cualquier otro método de contacto que te proporciono si tienes cualquier duda, inquietud o proposición",
+      "email": "Enter your email",
+      "send": "Send"
+    },
+    "banner": {
+      "download": "Download",
+      "cv": " my Currículum",
+      "linkin": "Visit my LinkedIn"
     }
   }
 }

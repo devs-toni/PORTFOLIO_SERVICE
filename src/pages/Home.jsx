@@ -25,9 +25,11 @@ function Home() {
       <Skills />
       <Projects />
       <Testimonials />
-      <Newsletter />
-      <Banner />
-      <Footer />
+      <div className='h-screen'>
+        <Newsletter />
+        <Banner />
+        <Footer />
+      </div>
     </div>
   );
 }
