@@ -31,7 +31,7 @@ function Testimonials() {
             </div>
             <blockquote className="text-lg text-gray-400 grow">— Antonio es una persona muy capaz. Que no duda en compartir sus conocimientos técnicos con el resto de sus compañeros con el fin de ayudar.</blockquote>
             <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-              <cite className="text-gray-200 not-italic">Sergi Clemente</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" target="_blank" href="https://github.com/scs87">GitHub</a>
+              <cite className="text-gray-200 not-italic">Sergi Clemente</cite>
             </div>
           </div>
 
@@ -46,7 +46,7 @@ function Testimonials() {
             </div>
             <blockquote className="text-lg text-gray-400 grow">— ¡Tony es un profesional top-to-bottom!!. Conoce y domina muy bien las herramientas con las que trabaja y no pierde ese espíritu de superación e ilusión para continuar aprendiendo y avanzando cada vez más. No duda en compartir sus conocimientos con total desinterés. ¡Personas como él se cuentan con los dedos de una mano!</blockquote>
             <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-              <cite className="text-gray-200 not-italic">Dayan Alvarez</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" target="_blank" href="https://github.com/Psicowar">GitHub</a>
+              <cite className="text-gray-200 not-italic">Dayan Alvarez</cite>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ function Testimonials() {
             </div>
             <blockquote className="text-lg text-gray-400 grow">— Buen compañero de trabajo, sobre todo por su gran aporte en el Backend al equipo y su gran interés por aprender otras tecnologías.</blockquote>
             <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-              <cite className="text-gray-200 not-italic">David Moina</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" target="_blank" href="https://github.com/davidmoina">GitHub</a>
+              <cite className="text-gray-200 not-italic">David Moina</cite>
             </div>
           </div>
 
