@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
-import TestimonialImage01 from '../images/testimonial-01.jpg';
+import TestimonialImage01 from '../images/sergi.png';
 
 function Testimonials() {
 
