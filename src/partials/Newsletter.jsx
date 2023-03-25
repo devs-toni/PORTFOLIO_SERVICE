@@ -6,10 +6,10 @@ function Newsletter() {
   const { text } = useLanguage();
 
   return (
-    <section className='pt-24 h-4/6 w-5/6 m-auto border border-b-1 border-t-0 border-r-0 border-l-0 border-gray-100 border-opacity-20'>
+    <section className='py-24 h-4/6 w-5/6 m-auto border border-b-1 border-t-0 border-r-0 border-l-0 border-gray-100 border-opacity-20 z-30'>
       <div className="max-w-6xl m-auto px-4 sm:px-6">
         <div className="max-w-5xl mx-auto text-center md:pb-16">
-          <h1 className="text-5xl sm:text-7xl xl:text-9xl -ml-10 mb-20 font-bold md:text-left">{text.contact.first}</h1>
+          <h1 className="text-4xl sm:text-6xl xl:text-8xl mb-10 md:-ml-10 font-bold md:text-left">{text.contact.first}</h1>
         </div>
         {/* CTA box */}
         <div className="relative bg-purple-600 py-10 px-8 md:py-20 md:px-12" data-aos="fade-up">
@@ -37,7 +37,7 @@ function Newsletter() {
 
             {/* CTA form */}
             <form className="w-full lg:w-1/2">
-              <textarea type="text" resizable={false} className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400 resize-none h-52" placeholder={text.contact.msg} aria-label={text.contact.msg} />
+              <textarea type="text" resizable={false} className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 sm:mb-0 sm:mr-2 text-white placeholder-purple-400 resize-none h-52" placeholder={text.contact.msg} aria-label={text.contact.msg} />
               <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
                 <input type="email" className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400" placeholder={text.contact.email} aria-label={text.contact.email} />
                 <a className="btn text-purple-600 bg-purple-100 hover:bg-white shadow" href="#0">{text.contact.send}</a>

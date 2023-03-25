@@ -13,23 +13,19 @@ import Footer from '../partials/Footer';
 function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-      <div className='h-screen'>
-        <Header />
-        <main className="grow">
-          <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
-            <PageIllustration />
-          </div>
-          <Title />
-        </main>
-      </div>
-      <Skills />
-      <Projects />
+      <Header />
+      <main className="grow z-30">
+        <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
+          <PageIllustration />
+        </div>
+        <Title />
+        <Skills />
+        <Projects />
+      </main>
       <Testimonials />
-      <div className='h-screen'>
-        <Newsletter />
-        <Banner />
-        <Footer />
-      </div>
+      <Newsletter />
+      <Banner />
+      <Footer />
     </div>
   );
 }

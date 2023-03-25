@@ -2,26 +2,24 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 import TestimonialImage01 from '../images/testimonial-01.jpg';
-import TestimonialImage02 from '../images/testimonial-02.jpg';
-import TestimonialImage03 from '../images/testimonial-03.jpg';
 
 function Testimonials() {
 
   const { text } = useLanguage();
 
   return (
-    <section className='bg-white h-screen py-36'>
+    <section className='bg-white py-20 z-30'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         <div className="xl:max-w-5xl mx-auto text-center pb-2 md:pb-2 md:pr-10 xl:pr-0">
-          <h2 className="text-5xl sm:text-7xl font-normal italic mb-20 xl:text-9xl md:text-right text-gray-700">{text.opinions.title}</h2>
+          <h2 className="text-5xl sm:text-7xl font-normal italic mb-10 xl:text-9xl md:text-right text-gray-700">{text.opinions.title}</h2>
         </div>
 
-        <div className="max-w-2xl ml-96 text-right pb-12 md:pb-20">
+        <div className="max-w-2xl ml-96 text-right pb-12 md:pb-10">
           <p className="text-xl text-gray-800 pb-10">{text.opinions.description}</p>
         </div>
 
-        <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none  pt-32">
+        <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none  pt-10">
           <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up">
             <div>
               <div className="relative inline-flex flex-col mb-4">

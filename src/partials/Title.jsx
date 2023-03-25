@@ -8,7 +8,7 @@ function Title() {
 
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 relative sm:px-6 xl:max-w-5xl">
+      <div className="max-w-6xl mx-auto px-4 relative sm:px-6 xl:max-w-5xl z-30">
         <div
           className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none"
           aria-hidden="true"

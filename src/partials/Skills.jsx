@@ -13,9 +13,9 @@ function Skills() {
 
   return (
     <>
-      <section className="bg-white p-20 h-screen">
+      <section className="bg-white p-20 z-30">
         <div className="xl:max-w-5xl mx-auto text-center pb-2 md:pb-20 md:pr-10 xl:pr-0">
-          <h2 className="text-5xl sm:text-7xl font-normal italic mb-4 xl:text-9xl md:text-right text-gray-700">{text.skills.title}</h2>
+          <h2 className="text-4xl sm:text-6xl font-normal italic mb-4 xl:text-8xl md:text-right text-gray-700">{text.skills.title}</h2>
         </div>
         <div className="max-w-6xl mx-auto ">
           <div className="py-3 md:py-3">

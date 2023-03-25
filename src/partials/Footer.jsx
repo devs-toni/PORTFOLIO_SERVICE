@@ -7,8 +7,8 @@ function Footer() {
   const {text} = useLanguage();
   
   return (
-    <footer className='h-full pt-64'>
-      <div className="-mt-10">
+    <footer className='pb-10 pt-32 z-30'>
+      <div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
           {/* Top area: Blocks */}
