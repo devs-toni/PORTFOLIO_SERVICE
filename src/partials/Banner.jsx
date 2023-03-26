@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import cv from '../images/cv.pdf';
 
 function Banner() {
 
@@ -14,9 +15,10 @@ function Banner() {
             <div className="text-slate-500 inline-flex">
               <a
                 className="font-medium hover:underline text-slate-50"
-                href="#"
+                href={cv}
                 target="_blank"
                 rel="noreferrer"
+                download="CV_antonio-rufino-casasus"
               >
                 {text.banner.download}<span className="hidden sm:inline">{text.banner.cv}</span>
               </a>{' '}
