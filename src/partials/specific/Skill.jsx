@@ -14,9 +14,9 @@ const Skill = ({ img, name, description }) => {
 
   return (
     <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
-      {image && <img src={image} alt={name} className="w-24 h-24 mb-4 rounded-full" />}
-      <h4 className="h4 mb-2 text-gray-900">{name}</h4>
-      <p className="text-lg text-gray-800 text-center">{description}</p>
+      {image && <img src={image} alt={name} className="w-10 h-10 surface:w-12 surface:h-12 sm:w-24 sm:h-24 md:w-20 md:h-20 lg:w-14 lg:h-14 xl:w-20 xl:h-20 mb-4 rounded-full" />}
+      <h4 className="text-gray-900 text-xs font-bold sm:mb-2 md:text-sm xl:text-lg">{name}</h4>
+      <p className="text-xxs md:text-sm lg:text-xs xl:text-lg xxl:text-sm text-gray-800 text-center">{description}</p>
     </div>
   )
 }

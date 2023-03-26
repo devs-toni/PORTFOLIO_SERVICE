@@ -13,14 +13,14 @@ function Skills() {
 
   return (
     <>
-      <section className="bg-white p-20 z-30">
-        <div className="xl:max-w-5xl mx-auto text-center pb-2 md:pb-20 md:pr-10 xl:pr-0">
-          <h2 className="text-4xl sm:text-6xl font-normal italic mb-4 xl:text-8xl md:text-right text-gray-700">{text.skills.title}</h2>
+      <section className="bg-white p-2 h-screen lg:p-0 z-30 superxl:pt-10">
+        <div className="mx-auto text-center mobile:pt-6 md:mb-6 lg:text-right lg:max-w-3xl lg:mb-0 xl:mb-8 xxl:mb-20">
+          <h2 className="text-2xl mobile:text-4xl sm:text-6xl font-normal italic mb-4 md:mb-0 xl:text-8xl text-gray-700">{text.skills.title}</h2>
         </div>
         <div className="max-w-6xl mx-auto ">
-          <div className="py-3 md:py-3">
+          <div className="lg:py-3">
             <div className='sm:px-7'>
-              <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
+              <div className="w-full px-2 mx-auto grid gap-4 grid-cols-5 mobile:grid-cols-4 mobile:gap-x-10 surface:gap-x-4 md:grid-cols-4 lg:grid-cols-7 xxl:grid-cols-5 xxl:gap-14 superxl:grid-cols-4 superxl:gap-16 items-start" data-aos-id-blocks>
                 {
                   skills &&
                   skills.map(({ img, format, name, description }) => {
