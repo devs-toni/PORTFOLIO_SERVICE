@@ -71,18 +71,6 @@
         "name": "HTML5",
         "description": "Manejo del lenguaje de etiquetas HTML"
       }
-    ],
-    "works": [
-      {
-        "img": "bianxi",
-        "name": "BianxiStore",
-        "description": "E-commerce . . ."
-      },
-      {
-        "img": "wishlist",
-        "name": "TODOList",
-        "description": "Task manager . . ."
-      }
     ]
   }
 }

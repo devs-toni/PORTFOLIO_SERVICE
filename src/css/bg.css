@@ -1,5 +1,5 @@
 .background-image {
-  background-image: url('../images/bianxi.png');
+  background-image: url("../images/bianxi.png");
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7,3 +7,50 @@
   width: 100vw;
   height: 100vh;
 }
+
+.all-works {
+  max-width: 80%;
+}
+.works-container {
+  display: flex;
+  flex-flow: row nowrap;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.works-container::-webkit-scrollbar {
+  display: none;
+}
+.works-container__arrows {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  width: 109%;
+  height: 100%;
+  margin-left: -5.6%;
+}
+.works-container__arrow {
+  width: 150px;
+  font-size: 12em;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.works-container__arrow:hover {
+  transform: scale(1.2);
+}
+
+.work-image {
+  max-height: 300px;
+  min-width: 33.333%;
+  max-width: 33.333%;
+  margin-right: 10px;
+  transition: all 0.2s ease-in;
+  border-radius: 2px;
+  z-index: 110;
+}
+.work-image:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
