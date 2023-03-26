@@ -5,14 +5,14 @@ const About = () => {
   const { text } = useLanguage();
 
   return (
-    <div className='flex flex-col justify-center p-10'>
-      <div className='flex flex-col md:flex-row mb-12 mt-12'>
-        <div className='mb-5 container text-center md:text-left flex justify-center md:justify-start j mr-8 md:mr-40'>
-          <p className='mr-3 font-medium italic text-3xl text-center sm:text-left sm:text-4xl'>{text.about.title}</p>
-          <p className='font-black text-3xl sm:text-4xl'>{text.about.title_me}</p>
+    <div className='flex flex-col justify-center'>
+      <div className='flex flex-col lg:flex-row mb-12 mt-2'>
+        <div className='mb-4 text-center lg:text-left flex justify-center lg:ml-10 xl:ml-0 lg:justify-start xl:mr-40'>
+          <p className='mr-3 font-medium italic text-2xl mobile:text-3xl text-center sm:text-left sm:text-4xl xxl:text-5xl xxl:mr-8'>{text.about.title}</p>
+          <p className='font-black text-2xl mobile:text-3xl sm:text-4xl xxl:text-5xl'>{text.about.title_me}</p>
         </div>
-        <div className='sm:max-w-xl flex justify-center'>
-          <p className='md:text-left '>{text.about.description}</p>
+        <div className='flex justify-center'>
+          <p className='text-xs mobile:text-sm mobile:leading-6 surface:text-xs sm:text-lg lg:text-left w-5/6 sm:w-full md:w-5/6 lg:text-sm xxl:text-xl xxl:w-full superxl:leading-8'>{text.about.description}</p>
         </div>
       </div>
 {/*       <div className='container md:max-w-sm text-center md:text-left'>

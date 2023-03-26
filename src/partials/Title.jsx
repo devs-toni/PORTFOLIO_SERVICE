@@ -7,7 +7,7 @@ function Title() {
   const { text } = useLanguage();
 
   return (
-    <section>
+    <section className='h-screen'>
       <div className="max-w-6xl mx-auto px-4 relative sm:px-6 xl:max-w-5xl z-30">
         <div
           className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none"
@@ -31,21 +31,21 @@ function Title() {
           </svg>
         </div>
 
-        <div className="relative pb-10 pt-10 md:pb-16 text-center">
-          <p className="text-center text-xl sm:text-2xl text-purple-500 mt-1 md:text-left" data-aos="fade-up" data-aos-delay="200">
+        <div className="relative pt-3 md:pt-5 text-center">
+          <p className="text-center text-sm sm:text-xl text-purple-500 lg:text-left" data-aos="fade-up" data-aos-delay="200">
             Antonio Rufino Casasus
           </p>
-          <div className="max-w-4xl md:max-w-5xl mx-auto text-center pb-4 md:pb-8 md:flex items-baseline mt-10">
-            <div className='md:text-left md:pl-5 xl:pl-0'>
-              <p className="text-5xl sm:text-6xl xl:text-8xl md:mb-3 font-semibold italic" data-aos="fade-up">
+          <div className="max-w-5xl mx-auto text-center lg:flex xl:items-baseline mt-6 lg:mt-0 xl:-mt-2 xxl:mb-20">
+            <div className='mobile:mb-4 lg:text-left lg:mt-16'>
+              <p className="text-2xl mobile:text-3xl sm:text-5xl md:text-6xl xl:text-6xl xxl:mb-10 xxl:text-7xl font-semibold italic" data-aos="fade-up">
                 {text.cover.section}
               </p>
-              <p className="text-4xl sm:text-6xl xl:text-8xl mb-4 md:mb-10 font-black" data-aos="fade-up">
+              <p className="text-2xl mobile:text-3xl sm:text-6xl xl:text-7xl xxl:text-8xl font-black" data-aos="fade-up">
                 {text.cover.work}
               </p>
             </div>
             <div>
-              <img src={meImage} alt="Me" />
+              <img src={meImage} alt="Me" className='w-4/6 m-auto mobile:mb-4 surface:w-3/6 xl:w-4/6 xxl:w-5/6 superxl:w-full' />
             </div>
           </div>
           <About />

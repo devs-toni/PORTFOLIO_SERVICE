@@ -5,7 +5,16 @@ module.exports = {
 
   ],
   theme: {
-    
+    screens: {
+      mobile: "380px",
+      surface: "520px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      xxl: "1536px",
+      superxl: "1850px"
+    },
     extend: {
       colors: {
         gray: {
