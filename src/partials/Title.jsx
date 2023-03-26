@@ -31,8 +31,8 @@ function Title() {
           </svg>
         </div>
 
-        <div className="relative pt-32 pb-10 md:pt-20 md:pb-16 text-center">
-          <p className="text-center text-xl sm:text-2xl text-purple-500 mt-1 md:text-left md:pl-24" data-aos="fade-up" data-aos-delay="200">
+        <div className="relative pb-10 pt-10 md:pb-16 text-center">
+          <p className="text-center text-xl sm:text-2xl text-purple-500 mt-1 md:text-left" data-aos="fade-up" data-aos-delay="200">
             Antonio Rufino Casasus
           </p>
           <div className="max-w-4xl md:max-w-5xl mx-auto text-center pb-4 md:pb-8 md:flex items-baseline mt-10">

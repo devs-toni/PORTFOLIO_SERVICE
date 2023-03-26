@@ -61,9 +61,9 @@ function Projects() {
 
   const handleClick = (direction) => {
     if (direction === 'back') {
-      listRef.current.scrollLeft -= (listRef.current.offsetWidth + 50);
+      listRef.current.scrollLeft -= (listRef.current.offsetWidth + 40);
     } else if (direction === 'forward') {
-      listRef.current.scrollLeft += (listRef.current.offsetWidth + 50);
+      listRef.current.scrollLeft += (listRef.current.offsetWidth + 40);
     }
   }
 
@@ -72,12 +72,12 @@ function Projects() {
       <div className="relative max-w-6xl mx-auto h-0 pointer-events-none z-30" aria-hidden="true">
         <PageIllustration />
       </div>
-      <div className="mx-auto px-4 sm:px-6 p-14 all-works">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 p-14 all-works">
         <div className="text-center py-12 md:pb-24 pl-40">
-          <h1 className="text-5xl sm:text-7xl xl:text-9xl -ml-10 mb-4 font-bold md:text-left">{text.works.title}</h1>
+          <h1 className="text-5xl sm:text-7xl xl:text-9xl -ml-40 mb-4 font-bold md:text-left">{text.works.title}</h1>
         </div>
         <section>
-          <div className="max-w-8xl mx-auto px-4 relative sm:px-6">
+          <div className="max-w-6xl mx-auto px-4 relative sm:px-6">
             <div className='works-container' ref={listRef}>
               <div className="works-container__arrows">
                 <RiArrowDropLeftFill className='works-container__arrow' onClick={() => handleClick('back')} />
@@ -85,9 +85,9 @@ function Projects() {
               </div>
               <div className='flex h-full py-10'>
                 {
-                  works.map(({img, link}) => {
+                  works.map(({img, link}, index) => {
                     return (
-                      <Work key={uuid()} img={img} link={link} />
+                      <Work key={uuid()} id={index} img={img} link={link} />
                     )
                   })
                 }
