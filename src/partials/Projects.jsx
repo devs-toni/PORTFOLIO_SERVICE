@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import uuid from 'react-uuid';
 import { useGlobal } from '../context/GlobalContext';
 import { useLanguage } from '../context/LanguageContext';
@@ -20,42 +20,78 @@ function Projects() {
   const { text } = useLanguage();
   const { database } = useGlobal();
   const listRef = useRef();
+  const [workActive, setWorkActive] = useState(-1);
 
   const works = [
     {
+      id: -1,
+      img: {},
+      link: "",
+      back: "Backend: ",
+      front: "Frontend:"
+    },
+    {
+      id: 0,
       img: bianxi,
-      link: "https://bianxi.arcprojects.es"
+      link: "https://bianxi.arcprojects.es",
+      back: "@SpringBoot @SpringSecurity @SpringData @MySQL",
+      front: "@React"
     },
     {
+      id: 1,
       img: moviehouse,
-      link: "https://moviehouse.arcprojects.es"
+      link: "https://moviehouse.arcprojects.es",
+      back: "@PHP",
+      front: "@HTML @CSS @Javascript"
     },
     {
+      id: 2,
       img: wishlist,
-      link: "https://tasks.arcprojects.es"
+      link: "https://tasks.arcprojects.es",
+      back: "",
+      front: "@React @LocalStorage"
     },
     {
+      id: 3,
       img: bikers,
+      link: "https://github.com/devs-toni/bikers",
+      back: "@SpringBoot @SpringSecurity @SpringData @Thymeleaf",
+      front: "@HTML @CSS @Javascript"
     },
     {
+      id: 4,
       img: pokemon,
+      back: "Java 11",
+      front: ""
     },
     {
+      id: 5,
       img: calendar,
-      link: "https://calendar.arcprojects.es"
+      link: "https://calendar.arcprojects.es",
+      back: "",
+      front: "@HTML @CSS @Javascript"
     },
     {
+      id: 6,
       img: shop,
-      link: "https://shop.arcprojects.es"
+      link: "https://shop.arcprojects.es",
+      back: "",
+      front: "@HTML @CSS @Javascript"
     },
     {
+      id: 7,
       img: hangman,
-      link: "https://hangman.arcprojects.es"
+      link: "https://hangman.arcprojects.es",
+      back: "",
+      front: "@HTML @CSS @Javascript"
     },
     {
+      id: 8,
       img: calculator,
-      link: "https://calculator.arcprojects.es"
-    } 
+      link: "https://calculator.arcprojects.es",
+      back: "",
+      front: "@HTML @CSS @Javascript"
+    }
 
   ];
 
@@ -83,16 +119,29 @@ function Projects() {
                 <RiArrowDropLeftFill className='works-container__arrow' onClick={() => handleClick('back')} />
                 <RiArrowDropRightFill className='works-container__arrow right-arrow' onClick={() => handleClick('forward')} />
               </div>
-              <div className='flex h-full py-10'>
+              <div className='flex h-full p-10'>
                 {
-                  works.map(({img, link}, index) => {
+                  works.map(({ id, img, link }) => {
                     return (
-                      <Work key={uuid()} id={index} img={img} link={link} />
+                      id !== -1 && <Work key={uuid()} setActive={setWorkActive} id={id} img={img} link={link} />
                     )
                   })
                 }
               </div>
             </div>
+
+          </div>
+          <div className='mx-auto mt-14 w-236 leading-10 text-center pb-10'>
+            {
+              <>
+                <p className={`font-bold ${works.find(work => work.id === workActive).back.length === 0 && 'invisible'} ${workActive === -1 && 'invisible'}`}>Backend -
+                  <span className='font-thin not-italic pl-2'>{works.find(work => work.id === workActive).back.length > 0 ? works.find(work => work.id === workActive).back : "Empty"}</span>
+                </p>
+                <p className={`font-bold ${workActive === -1 && ' invisible'}`}>Frontend -
+                  <span className='font-medium not-italic pl-2'>{works.find(work => work.id === workActive).front}</span>
+                </p>
+              </>
+            }
           </div>
         </section>
       </div>

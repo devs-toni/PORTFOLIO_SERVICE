@@ -26,9 +26,10 @@
   position: absolute;
   justify-content: space-between;
   align-items: center;
-  width: 109%;
+  width: 120%;
   height: 100%;
-  margin-left: -6.3%;
+  margin-left: -12%;
+  z-index: 1;
 }
 .works-container__arrow {
   width: 100px;
@@ -45,12 +46,11 @@
   min-width: 25%;
   max-width: 25%;
   margin-right: 10px;
-  transition: all 0.2s ease-in;
+  transition: all 0.3s ease-in;
   border-radius: 2px;
-  z-index: 110;
+  z-index: 100;
 }
 .work-image:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   cursor: pointer;
 }
-
