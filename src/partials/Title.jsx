@@ -7,10 +7,12 @@ function Title() {
   const { text } = useLanguage();
 
   return (
-    <div className='max-w-5xl m-auto'>
-      <p className="text-center text-sm sm:text-xl pt-5 text-purple-500 lg:text-left lg:pl-8 xl:pl-0" data-aos="fade-up" data-aos-delay="200">
-        Antonio Rufino Casasus
-      </p>
+    <div className='max-w-full m-auto bg-gray-900'>
+      <div className="max-w-5xl m-auto">
+        <p className="text-center text-sm sm:text-xl pt-5 text-purple-500 lg:text-left lg:pl-8 xl:pl-0" data-aos="fade-up" data-aos-delay="200">
+          Antonio Rufino Casasus
+        </p>
+      </div>
       <section className='h-screen flex flex-col justify-center'>
         <div className="max-w-6xl mx-auto px-4 relative sm:px-6 xl:max-w-5xl z-30">
           <div
@@ -22,8 +24,8 @@ function Title() {
             <svg className="max-w-full" width="564" height="552" viewBox="0 0 564 552" fill="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="illustration-02" x1="-3.766" y1="300.204" x2="284.352" y2="577.921" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#5D5DFF" stopOpacity=".01" />
-                  <stop offset="1" stopColor="#5D5DFF" stopOpacity=".32" />
+                  <stop stopColor="#4b4acf" stopOpacity=".01" />
+                  <stop offset="1" stopColor="#4b4acf" stopOpacity=".32" />
                 </linearGradient>
               </defs>
               <path

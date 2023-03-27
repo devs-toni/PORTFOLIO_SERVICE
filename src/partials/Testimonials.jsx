@@ -2,21 +2,24 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
 import TestimonialImage01 from '../images/sergi.png';
+import PageIllustration from './PageIllustration';
 
 function Testimonials() {
 
   const { text } = useLanguage();
 
   return (
-    <section className='bg-white flex flex-col justify-center z-30'>
+    <section className='flex flex-col justify-center z-30 bg-gray-300 py-10'>
+      <div className="relative w-3/6 mx-auto h-0 pointer-events-none z-30" aria-hidden="true">
+        <PageIllustration />
+      </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 sm:max-w-full superxl:h-full superxl:p-40 superxl:flex superxl:flex-col superxl:justify-between">
-
         <div>
           <div className="xl:max-w-5xl mx-auto text-center pb-2 md:pb-0 md:pr-10 lg:text-right xl:pr-0">
-            <h2 className="text-3xl mobile:text-3xl sm:text-5xl font-normal italic sm:mb-6 xl:text-8xl text-gray-700">{text.opinions.title}</h2>
+            <h2 className="text-3xl mobile:text-3xl sm:text-5xl font-normal italic sm:mb-6 xl:text-8xl text-gray-900">{text.opinions.title}</h2>
           </div>
           <div className="max-w-2xl lg:ml-96 text-center hidden mobile:block pb-4 md:pb-0 lg:pb-4 surface:hidden sm:block">
-            <p className="text-sm text-gray-800 md:text-lg">{text.opinions.description}</p>
+            <p className="text-sm md:text-lg text-gray-900">{text.opinions.description}</p>
           </div>
         </div>
 

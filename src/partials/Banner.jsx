@@ -15,16 +15,22 @@ function Banner() {
             <div className="text-slate-500 inline-flex">
               <a
                 className="font-medium hover:underline text-slate-50"
+                href="https://www.linkedin.com/in/antonio-rufino-casasus/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {text.banner.linkin}
+              </a>{' '}
+              <span className="italic px-1.5">or</span>{' '}
+              <a
+                className="font-medium hover:underline text-emerald-400"
                 href={cv}
                 target="_blank"
                 rel="noreferrer"
                 download="CV_antonio-rufino-casasus"
               >
-                {text.banner.download}<span className="hidden sm:inline">{text.banner.cv}</span>
-              </a>{' '}
-              <span className="italic px-1.5">or</span>{' '}
-              <a className="font-medium hover:underline text-emerald-400" href="https://www.linkedin.com/in/antonio-rufino-casasus/" target="_blank" rel="noreferrer">
-                {text.banner.linkin}
+                {text.banner.download}
+                <span className="hidden sm:inline">{text.banner.cv}</span>
               </a>
             </div>
             <button className="text-slate-500 hover:text-slate-400 pl-2 ml-3 border-l border-gray-700" onClick={() => setBannerOpen(false)}>

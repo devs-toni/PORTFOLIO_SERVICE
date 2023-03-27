@@ -105,16 +105,13 @@ function Projects() {
 
   return (
     <section className='flex flex-col justify-center pt-8'>
-      <div className="relative max-w-6xl mx-auto h-0 pointer-events-none z-30" aria-hidden="true">
-        <PageIllustration />
-      </div>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 all-works superxl:h-full superxl:py-10 superxl:flex superxl:flex-col superxl:justify-between">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 all-works border-b border-b-gray-700 superxl:h-full superxl:py-10 superxl:flex superxl:flex-col superxl:justify-between">
         <div className="text-center lg:pb-0 xl:pb-20 ">
           <h1 className="text-3xl sm:text-6xl xl:text-8xl font-bold lg:text-left">{text.works.title}</h1>
         </div>
         <section>
           <div className="mx-auto relative">
-            <div className='works-container' ref={listRef}>
+            <div className='works-container' ref={listRef} data-aos="fade-up" data-aos-delay="400">
               <div className="works-container__arrows">
                 <RiArrowDropLeftFill className='works-container__arrow left-arrow' onClick={() => handleClick('back')} />
                 <RiArrowDropRightFill className='works-container__arrow right-arrow' onClick={() => handleClick('forward')} />

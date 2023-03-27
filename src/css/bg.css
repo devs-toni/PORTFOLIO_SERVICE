@@ -1,13 +1,3 @@
-.background-image {
-  background-image: url("../images/bianxi.png");
-  z-index: -1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-}
-
 .all-works {
   max-width: 80%;
 }

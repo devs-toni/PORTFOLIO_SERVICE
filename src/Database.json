@@ -4,72 +4,87 @@
       {
         "img": "java",
         "name": "Java",
-        "description": "Profundización en el lenguage de programación orientada a objetos Java."
+        "description": "Object-oriented programming language Java"
       },
       {
         "img": "boot",
         "name": "SpringBoot",
-        "description": "Manejo del framework de Java, Spring Boot para implementación de backend en proyectos."
+        "description": "Spring Boot for microservices implementations"
       },
       {
         "img": "php",
         "name": "PHP",
-        "description": "Dominio del lenguaje de programación PHP v8."
+        "description": "Proficiency in PHP v8 programming language"
+      },
+      {
+        "img": "node",
+        "name": "Node",
+        "description": "Proficiency in Node.js"
       },
       {
         "img": "sql",
         "name": "SQL",
-        "description": "Manejo de lenguaje de consultas SQL para la obtención de datos."
+        "description": "SQL relational query language skills"
+      },
+      {
+        "img": "mongodb",
+        "name": "MongoDb",
+        "description": "SQL not relational query language skills"
       },
       {
         "img": "react",
         "name": "ReactJS",
-        "description": "Manejo de la libería de ReactJS para la creación de sitios web."
+        "description": "Use of the React library for the creation of websites"
       },
       {
         "img": "js",
         "name": "Javascript",
-        "description": "Manejo de Javascript desde las primeras versiones hasta ECMAScript2020."
+        "description": "Javascript usage from early versions to ECMAScript2020"
       },
       {
         "img": "git",
         "name": "Git",
-        "description": "Manejo de Git como software de control de versiones."
+        "description": "Git as version control software"
       },
       {
         "img": "docker",
         "name": "Docker",
-        "description": "Creación de contenedores con docker y con docker-compose. "
+        "description": "Docker for build, share, and run applications."
       },
       {
         "img": "elastic",
         "name": "ElasticSearch",
-        "description": "Manejo de queries para la obtención de datos en el motor de búsqueda"
+        "description": "Handling queries for data retrieval in the search engine"
       },
       {
         "img": "javaFx",
         "name": "JavaFX",
-        "description": "Creación de interfaces visuales programadas con JavaFx."
+        "description": "Creation of visual interfaces developed with JavaFx"
       },
       {
         "img": "sass",
         "name": "Sass",
-        "description": "Implementación de estilos con Sass."
+        "description": "Styling implementation with Sass."
       },
       {
         "img": "bootstrap",
         "name": "Bootstrap v5",
-        "description": "Manejo de clases de Bootstrap para una rápida implementación."
+        "description": "Use of Bootstrap classes for quick styles implementation."
+      },
+      {
+        "img": "tailwind",
+        "name": "Tailwind",
+        "description": "Use of Tailwind classes for quick styles implementation."
       },
       {
         "img": "css",
         "name": "CSS3",
-        "description": "Manejo de estilos CSS, incluido el diseño responsive."
+        "description": "CSS styling, including responsive design"
       },
       {
         "img": "html",
         "name": "HTML5",
-        "description": "Manejo del lenguaje de etiquetas HTML"
+        "description": "Handling HTML tagging language"
       }
     ]
   }
