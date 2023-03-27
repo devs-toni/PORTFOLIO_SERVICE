@@ -11,7 +11,7 @@ import Footer from '../partials/Footer';
 
 function Home() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex flex-col overflow-hidden">
       <main className="grow z-30">
         <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
           <PageIllustration />
@@ -21,7 +21,7 @@ function Home() {
         <Projects />
       </main>
       <Testimonials />
-      <div className='h-screen'>
+      <div className='h-fit flex flex-col items-center superxl:justify-between py-10'>
         <Newsletter />
         <Footer />
       </div>

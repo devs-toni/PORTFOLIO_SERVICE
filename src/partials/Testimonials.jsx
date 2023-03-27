@@ -8,7 +8,7 @@ function Testimonials() {
   const { text } = useLanguage();
 
   return (
-    <section className='bg-white h-screen flex flex-col justify-center z-30'>
+    <section className='bg-white flex flex-col justify-center z-30'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 sm:max-w-full superxl:h-full superxl:p-40 superxl:flex superxl:flex-col superxl:justify-between">
 
         <div>

@@ -6,13 +6,13 @@ function Newsletter() {
   const { text } = useLanguage();
 
   return (
-    <section className='py-24 h-4/6 w-5/6 m-auto border border-b-1 border-t-0 border-r-0 border-l-0 border-gray-100 border-opacity-20 z-30'>
-      <div className="max-w-6xl m-auto px-4 sm:px-6">
-        <div className="max-w-5xl mx-auto text-center md:pb-16">
-          <h1 className="text-4xl sm:text-6xl xl:text-8xl mb-10 md:-ml-10 font-bold md:text-left">{text.contact.first}</h1>
+    <section className='w-5/6 m-auto border border-b-1 border-t-0 border-r-0 border-l-0 border-gray-100 border-opacity-20 z-30'>
+      <div className="max-w-6xl m-auto px-4 sm:px-6 mobile:pb-10 surface:pb-6">
+        <div className="max-w-5xl mx-auto text-center">
+          <h1 className="text-3xl sm:text-6xl xl:text-8xl mb-4 mobile:mb-8 surface:mb-2 sm:mb-14 md:-ml-10 lg:mb-4 xl:mb-14 font-bold lg:text-left">{text.contact.first}</h1>
         </div>
         {/* CTA box */}
-        <div className="relative bg-purple-600 py-10 px-8 md:py-20 md:px-12" data-aos="fade-up">
+        <div className="relative bg-purple-600 px-8 md:px-12 mb-4 surface:mb-2 sm:mb-4" data-aos="fade-up">
 
           {/* Background illustration */}
           <div className="absolute right-0 top-0 -ml-40 pointer-events-none" aria-hidden="true">
@@ -27,20 +27,22 @@ function Newsletter() {
             </svg>
           </div>
 
-          <div className="relative flex flex-col lg:flex-row justify-between items-start">
+          <div className="relative flex flex-col lg:flex-row justify-between items-start py-2 mobile:py-6 surface:py-2 xl:py-14">
 
             {/* CTA content */}
-            <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
-              <h3 className="h3 text-white mb-2">{text.contact.title}</h3>
-              <p className="text-purple-200 text-lg">{text.contact.description}</p>
+            <div className="mb-2 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2 p-2">
+              <h3 className="h3 text-white mb-1 mobile:text-lg md:text-2xl lg:text-lg">{text.contact.title}</h3>
+              <p className="text-purple-200 text-xxs mobile:text-xs md:text-lg lg:text-sm">{text.contact.description}</p>
             </div>
 
             {/* CTA form */}
-            <form className="w-full lg:w-1/2">
-              <textarea type="text" style={{resize:'none'}} className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 sm:mb-0 sm:mr-2 text-white placeholder-purple-400 resize-none h-52" placeholder={text.contact.msg} aria-label={text.contact.msg} />
-              <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
-                <input type="email" className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400" placeholder={text.contact.email} aria-label={text.contact.email} />
-                <a className="btn text-purple-600 bg-purple-100 hover:bg-white shadow" href="#0">{text.contact.send}</a>
+            <form className="w-full lg:w-1/2 pb-4">
+              <div className='w-full flex justify-center'>
+                <textarea type="text" style={{ resize: 'none' }} className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-2 mb-2 surface:mb-1 text-white placeholder-purple-400 resize-none h-24 text-xs surface:max-w-xs sm:max-w-md md:text-lg lg:text-sm" placeholder={text.contact.msg} aria-label={text.contact.msg} />
+              </div>
+              <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md">
+                <input type="email" className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-2 mb-1 sm:mb-0 sm:mr-2 text-white placeholder-purple-400 text-xs md:text-lg lg:text-sm" placeholder={text.contact.email} aria-label={text.contact.email} />
+                <a className="btn text-purple-600 bg-purple-100 hover:bg-white shadow text-xs text-center inline-flex items-center px-2 justify-center md:text-lg lg:text-sm" href="#0">{text.contact.send}</a>
               </div>
               {/* Success message */}
               {/* <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
