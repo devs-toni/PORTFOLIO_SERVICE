@@ -13,7 +13,7 @@ function Skills() {
 
   return (
     <>
-      <section className="bg-white h-screen flex flex-col justify-center z-30">
+      <section className="bg-white h-screen flex flex-col justify-center z-30 superxl:justify-between superxl:p-32">
         <div className="mx-auto w-full text-center mobile:pt-6 md:mb-6 lg:text-right lg:max-w-3xl xl:mb-8">
           <h2 className="text-2xl mobile:text-4xl sm:text-6xl font-normal italic mb-4 md:mb-0 xl:text-8xl text-gray-700 -mr-20">{text.skills.title}</h2>
         </div>

@@ -108,9 +108,9 @@ function Projects() {
       <div className="relative max-w-6xl mx-auto h-0 pointer-events-none z-30" aria-hidden="true">
         <PageIllustration />
       </div>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 all-works">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 all-works superxl:h-full superxl:py-40 superxl:flex superxl:flex-col superxl:justify-between">
         <div className="text-center lg:pb-0 xxl:pb-20 pl-40">
-          <h1 className="text-3xl sm:text-5xl xl:text-8xl -ml-40 mb-4 font-bold lg:text-left">{text.works.title}</h1>
+          <h1 className="text-3xl sm:text-6xl xl:text-8xl -ml-40 mb-4 font-bold lg:text-left">{text.works.title}</h1>
         </div>
         <section>
           <div className="mx-auto relative">

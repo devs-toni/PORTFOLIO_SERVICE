@@ -55,11 +55,9 @@
   transition: all 0.3s ease-in;
   border-radius: 2px;
   z-index: 100;
-}
-.work-image:hover {
-  transform: scale(1.05);
   cursor: pointer;
 }
+
 @media screen and (min-width: 150px) and (max-width: 290px) {
   .works-container {
     width: 200px;

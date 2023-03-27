@@ -21,9 +21,11 @@ function Home() {
         <Projects />
       </main>
       <Testimonials />
-      <Newsletter />
+      <div className='h-screen'>
+        <Newsletter />
+        <Footer />
+      </div>
       <Banner />
-      <Footer />
     </div>
   );
 }
