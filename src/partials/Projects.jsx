@@ -13,6 +13,7 @@ import bikers from '../images/bikers.jpg';
 import moviehouse from '../images/moviehouse.png';
 import pokemon from '../images/pokemon-console.jpg';
 import shop from '../images/shop.png';
+import smooth from '../images/smooth.png';
 import { RiArrowDropRightFill, RiArrowDropLeftFill } from "react-icons/ri";
 
 function Projects() {
@@ -28,71 +29,88 @@ function Projects() {
       img: {},
       link: "",
       back: "Backend: ",
-      front: "Frontend:"
+      front: "Frontend:",
+      name: ""
     },
     {
       id: 0,
       img: bianxi,
       link: "https://bianxi.arcprojects.es",
       back: "@SpringBoot @SpringSecurity @SpringData @MySQL",
-      front: "@React"
+      front: "@React",
+      name: "Bianxi Store"
     },
     {
       id: 1,
-      img: moviehouse,
-      link: "https://moviehouse.arcprojects.es",
-      back: "@PHP",
-      front: "@HTML @CSS @Javascript"
+      img: smooth,
+      link: "https://smoothsick.arcprojects.es",
+      back: "@Node @Express @MongoDb",
+      front: "@React",
+      name: "Smoothsick"
     },
     {
       id: 2,
-      img: wishlist,
-      link: "https://tasks.arcprojects.es",
-      back: "",
-      front: "@React @LocalStorage"
+      img: moviehouse,
+      link: "https://moviehouse.arcprojects.es",
+      back: "@PHP",
+      front: "@HTML @CSS @Javascript",
+      name: "Movie House"
     },
     {
       id: 3,
-      img: bikers,
-      link: "https://github.com/devs-toni/bikers",
-      back: "@SpringBoot @SpringSecurity @SpringData @Thymeleaf",
-      front: "@HTML @CSS @Javascript"
+      img: wishlist,
+      link: "https://tasks.arcprojects.es",
+      back: "",
+      front: "@React @LocalStorage",
+      name: "ToDo List"
     },
     {
       id: 4,
-      img: pokemon,
-      back: "Java 11",
-      front: ""
+      img: bikers,
+      link: "https://github.com/devs-toni/bikers",
+      back: "@SpringBoot @SpringSecurity @SpringData @Thymeleaf",
+      front: "@HTML @CSS @Javascript",
+      name: "Bikers Social"
     },
     {
       id: 5,
-      img: calendar,
-      link: "https://calendar.arcprojects.es",
-      back: "",
-      front: "@HTML @CSS @Javascript"
+      img: pokemon,
+      back: "Java 11",
+      front: "",
+      name: "Pokemon Console"
     },
     {
       id: 6,
-      img: shop,
-      link: "https://shop.arcprojects.es",
+      img: calendar,
+      link: "https://calendar.arcprojects.es",
       back: "",
-      front: "@HTML @CSS @Javascript"
+      front: "@HTML @CSS @Javascript",
+      name: "Calendar Js"
     },
     {
       id: 7,
-      img: hangman,
-      link: "https://hangman.arcprojects.es",
+      img: shop,
+      link: "https://shop.arcprojects.es",
       back: "",
-      front: "@HTML @CSS @Javascript"
+      front: "@HTML @CSS @Javascript",
+      name: "Buy Mock"
     },
     {
       id: 8,
+      img: hangman,
+      link: "https://hangman.arcprojects.es",
+      back: "",
+      front: "@HTML @CSS @Javascript",
+      name: "Hangman Game"
+    },
+    {
+      id: 9,
       img: calculator,
       link: "https://calculator.arcprojects.es",
       back: "",
-      front: "@HTML @CSS @Javascript"
+      front: "@HTML @CSS @Javascript",
+      name: "Calculator Js"
     }
-
   ];
 
   const handleClick = (direction) => {
@@ -104,8 +122,8 @@ function Projects() {
   }
 
   return (
-    <section className='flex flex-col justify-center pt-8'>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 all-works border-b border-b-gray-700 superxl:h-full superxl:py-10 superxl:flex superxl:flex-col superxl:justify-between">
+    <section className='flex flex-col justify-center py-8'>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 all-works superxl:h-full superxl:py-10 superxl:flex superxl:flex-col superxl:justify-between">
         <div className="text-center lg:pb-0 xl:pb-20 ">
           <h1 className="text-3xl sm:text-6xl xl:text-8xl font-bold lg:text-left">{text.works.title}</h1>
         </div>
@@ -116,11 +134,11 @@ function Projects() {
                 <RiArrowDropLeftFill className='works-container__arrow left-arrow' onClick={() => handleClick('back')} />
                 <RiArrowDropRightFill className='works-container__arrow right-arrow' onClick={() => handleClick('forward')} />
               </div>
-              <div className='flex h-full w-full'>
+              <div className='flex h-full w-full works-flex-container'>
                 {
-                  works.map(({ id, img, link }) => {
+                  works.map(({ id, img, link, name }) => {
                     return (
-                      id !== -1 && <Work key={uuid()} setActive={setWorkActive} id={id} img={img} link={link} />
+                      id !== -1 && <Work key={uuid()} setActive={setWorkActive} id={id} img={img} link={link} name={name} />
                     )
                   })
                 }

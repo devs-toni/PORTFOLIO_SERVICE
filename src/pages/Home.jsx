@@ -21,7 +21,7 @@ function Home() {
         <Projects />
       </main>
       <Testimonials />
-      <div className='h-fit flex flex-col items-center superxl:justify-between py-10'>
+      <div className='h-fit flex flex-col items-center superxl:justify-between py-20'>
         <Newsletter />
         <Footer />
       </div>

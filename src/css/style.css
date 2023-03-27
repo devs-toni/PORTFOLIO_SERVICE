@@ -9,6 +9,7 @@
 @import 'additional-styles/toggle-switch.css';
 @import 'additional-styles/theme.css';
 @import './bg.css';
+@import './additional-styles/loader.css';
 
 @import 'tailwindcss/utilities';
 
@@ -22,4 +23,8 @@
 /* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
 [x-cloak=""] {
     display: none;
+}
+
+textarea::-webkit-scrollbar {
+  all: unset;
 }
