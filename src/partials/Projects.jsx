@@ -97,29 +97,29 @@ function Projects() {
 
   const handleClick = (direction) => {
     if (direction === 'back') {
-      listRef.current.scrollLeft -= (listRef.current.offsetWidth + 40);
+      listRef.current.scrollLeft -= (listRef.current.offsetWidth);
     } else if (direction === 'forward') {
-      listRef.current.scrollLeft += (listRef.current.offsetWidth + 40);
+      listRef.current.scrollLeft += (listRef.current.offsetWidth);
     }
   }
 
   return (
-    <section className='pt-20 pb-40'>
+    <section className='pb-40 h-screen'>
       <div className="relative max-w-6xl mx-auto h-0 pointer-events-none z-30" aria-hidden="true">
         <PageIllustration />
       </div>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 p-14 all-works">
-        <div className="text-center py-12 md:pb-24 pl-40">
-          <h1 className="text-5xl sm:text-7xl xl:text-9xl -ml-40 mb-4 font-bold md:text-left">{text.works.title}</h1>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 all-works">
+        <div className="text-center py-12 lg:pb-0 xxl:pb-20 pl-40">
+          <h1 className="text-5xl sm:text-7xl xl:text-9xl -ml-40 mb-4 font-bold lg:text-left">{text.works.title}</h1>
         </div>
         <section>
-          <div className="max-w-6xl mx-auto px-4 relative sm:px-6">
+          <div className="mx-auto relative">
             <div className='works-container' ref={listRef}>
               <div className="works-container__arrows">
-                <RiArrowDropLeftFill className='works-container__arrow' onClick={() => handleClick('back')} />
+                <RiArrowDropLeftFill className='works-container__arrow left-arrow' onClick={() => handleClick('back')} />
                 <RiArrowDropRightFill className='works-container__arrow right-arrow' onClick={() => handleClick('forward')} />
               </div>
-              <div className='flex h-full p-10'>
+              <div className='flex h-full w-full'>
                 {
                   works.map(({ id, img, link }) => {
                     return (
@@ -131,16 +131,16 @@ function Projects() {
             </div>
 
           </div>
-          <div className='mx-auto mt-14 w-236 leading-10 text-center pb-10'>
+          <div className='mx-auto mt-14 leading-10 text-center pb-10'>
             {
-              <>
+              <div className={`bg-white w-3/6 m-auto text-black ${workActive === -1 && ' invisible'} p-10 rounded-sm`}>
                 <p className={`font-bold ${works.find(work => work.id === workActive).back.length === 0 && 'invisible'} ${workActive === -1 && 'invisible'}`}>Backend -
                   <span className='font-thin not-italic pl-2'>{works.find(work => work.id === workActive).back.length > 0 ? works.find(work => work.id === workActive).back : "Empty"}</span>
                 </p>
                 <p className={`font-bold ${workActive === -1 && ' invisible'}`}>Frontend -
                   <span className='font-medium not-italic pl-2'>{works.find(work => work.id === workActive).front}</span>
                 </p>
-              </>
+              </div>
             }
           </div>
         </section>
