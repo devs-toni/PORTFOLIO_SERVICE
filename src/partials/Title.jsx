@@ -31,7 +31,7 @@ function Title() {
           </svg>
         </div>
 
-        <div className="relative pt-3 md:pt-5 text-center">
+        <div className="relative pt-3 md:pt-5 text-center superxl:pt-20">
           <p className="text-center text-sm sm:text-xl text-purple-500 lg:text-left" data-aos="fade-up" data-aos-delay="200">
             Antonio Rufino Casasus
           </p>
@@ -45,7 +45,7 @@ function Title() {
               </p>
             </div>
             <div>
-              <img src={meImage} alt="Me" className='w-4/6 m-auto mobile:mb-4 surface:w-3/6 xl:w-4/6 xxl:w-5/6 superxl:w-full' />
+              <img src={meImage} alt="Me" className='w-4/6 m-auto mobile:mb-4 surface:w-3/6 xl:w-4/6 xxl:w-5/6' />
             </div>
           </div>
           <About />

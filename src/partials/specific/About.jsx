@@ -12,7 +12,7 @@ const About = () => {
           <p className='font-black text-2xl mobile:text-3xl sm:text-4xl xxl:text-5xl'>{text.about.title_me}</p>
         </div>
         <div className='flex justify-center'>
-          <p className='text-xs mobile:text-sm mobile:leading-6 surface:text-xs sm:text-lg lg:text-left w-5/6 sm:w-full md:w-5/6 lg:text-sm xxl:text-xl xxl:w-full superxl:leading-8'>{text.about.description}</p>
+          <p className='text-xs mobile:text-sm mobile:leading-6 surface:text-xs sm:text-lg lg:text-left w-5/6 sm:w-full md:w-5/6 lg:text-sm xl:w-full xxl:text-xl xxl:w-full superxl:leading-8'>{text.about.description}</p>
         </div>
       </div>
 {/*       <div className='container md:max-w-sm text-center md:text-left'>
