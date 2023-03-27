@@ -7,7 +7,7 @@ function Title() {
   const { text } = useLanguage();
 
   return (
-    <section className='h-screen'>
+    <section className='h-screen flex flex-col justify-center'>
       <div className="max-w-6xl mx-auto px-4 relative sm:px-6 xl:max-w-5xl z-30">
         <div
           className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none"
@@ -31,7 +31,7 @@ function Title() {
           </svg>
         </div>
 
-        <div className="relative pt-3 md:pt-5 text-center superxl:pt-20">
+        <div className="relative text-center">
           <p className="text-center text-sm sm:text-xl text-purple-500 lg:text-left" data-aos="fade-up" data-aos-delay="200">
             Antonio Rufino Casasus
           </p>

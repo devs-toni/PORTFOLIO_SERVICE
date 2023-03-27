@@ -104,13 +104,13 @@ function Projects() {
   }
 
   return (
-    <section className='pb-40 h-screen'>
+    <section className='h-screen flex flex-col justify-center'>
       <div className="relative max-w-6xl mx-auto h-0 pointer-events-none z-30" aria-hidden="true">
         <PageIllustration />
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 all-works">
-        <div className="text-center py-12 lg:pb-0 xxl:pb-20 pl-40">
-          <h1 className="text-5xl sm:text-7xl xl:text-9xl -ml-40 mb-4 font-bold lg:text-left">{text.works.title}</h1>
+        <div className="text-center lg:pb-0 xxl:pb-20 pl-40">
+          <h1 className="text-3xl sm:text-5xl xl:text-8xl -ml-40 mb-4 font-bold lg:text-left">{text.works.title}</h1>
         </div>
         <section>
           <div className="mx-auto relative">
@@ -131,7 +131,7 @@ function Projects() {
             </div>
 
           </div>
-          <div className='mx-auto mt-14 leading-10 text-center pb-10'>
+          <div className='mx-auto mt-14 leading-10 text-center pb-10 hidden'>
             {
               <div className={`bg-white w-3/6 m-auto text-black ${workActive === -1 && ' invisible'} p-10 rounded-sm`}>
                 <p className={`font-bold ${works.find(work => work.id === workActive).back.length === 0 && 'invisible'} ${workActive === -1 && 'invisible'}`}>Backend -
