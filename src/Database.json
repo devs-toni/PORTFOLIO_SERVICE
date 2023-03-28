@@ -37,6 +37,11 @@
         "description": "Use of the React library for the creation of websites"
       },
       {
+        "img": "type",
+        "name": "Typescript",
+        "description": "Use of Typescript with strict typing"
+      },
+      {
         "img": "js",
         "name": "Javascript",
         "description": "Javascript usage from early versions to ECMAScript2020"
