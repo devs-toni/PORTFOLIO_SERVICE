@@ -25,6 +25,6 @@
     display: none;
 }
 
-textarea::-webkit-scrollbar {
+::-webkit-scrollbar {
   all: unset;
 }
