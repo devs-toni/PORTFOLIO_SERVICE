@@ -77,19 +77,17 @@ function Projects() {
       id: 5,
       img: lord,
       back: "",
-      link: "src/images/TheLordOfTheRings-byAntonioRufinoCasasus.jar",
+      link: "https://github.com/devs-toni/lord-rings-java",
       front: "",
-      name: "The Lord Of The Rings",
-      download: true
+      name: "The Lord Of The Rings"
     },
     {
       id: 6,
       img: pokemon,
       back: "Java 11",
-      link: "src/images/Pokemon-byAntonioRufinoCasasus.rar",
+      link: "https://github.com/devs-toni/pokemon-java",
       front: "",
-      name: "Pokemon Console",
-      download: true
+      name: "Pokemon Console"
     },
     {
       id: 7,
@@ -148,9 +146,9 @@ function Projects() {
               </div>
               <div className='flex h-full w-full works-flex-container'>
                 {
-                  works.map(({ id, img, link, name, download }) => {
+                  works.map(({ id, img, link, name, download , extension }) => {
                     return (
-                      id !== -1 && <Work key={uuid()} id={id} img={img} link={link} name={name} isDownload={download} />
+                      id !== -1 && <Work key={uuid()} id={id} img={img} link={link} name={name} isDownload={download} ext={extension} />
                     )
                   })
                 }

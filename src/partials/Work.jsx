@@ -1,16 +1,10 @@
 import { Navigate, NavLink, useNavigate } from "react-router-dom";
 
-const Work = ({ id, img, link, name, isDownload, ext }) => {
+const Work = ({ id, img, link, name }) => {
 
   const handleClick = ({ target }) => {
-    if (isDownload) {
-      const newWindow = window.open(link, 'noopener,noreferrer')
-      if (newWindow) newWindow.opener = null
-    } else {
-      const newWindow = window.open(link, '_blank', 'noopener,noreferrer')
-      if (newWindow) newWindow.opener = null
-    }
-
+    const newWindow = window.open(link, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
   }
 
   return (
