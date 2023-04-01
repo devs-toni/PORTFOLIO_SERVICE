@@ -13,7 +13,7 @@ function Title() {
           Antonio Rufino Casasus
         </p>
       </div>
-      <section className='h-screen flex flex-col justify-center'>
+      <section className='flex flex-col justify-center'>
         <div className="max-w-6xl mx-auto px-4 relative sm:px-6 xl:max-w-5xl z-30">
           <div
             className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none"

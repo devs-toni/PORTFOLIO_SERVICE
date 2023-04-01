@@ -47,7 +47,8 @@
     "about": {
       "title": "About",
       "title_me": "me",
-      "description": "Object-oriented Java and React programmer with 1+ years of experience developing and maintaining software applications. I designed and developed more than 5 advanced applications from use cases and functional requirements.  I research new technologies to ensure that my knowledge is constantly updated."
+      "description1": "Hi, my name is Antonio, and I'm a spanish based full stack developer waiting to set up home wherever destiny decides, as long as english is spoken.",
+      "description2": "1+ years of experience developing and maintaining software applications. I've designed and developed advanced applications from use cases and functional requirements. I research new technologies to ensure a constant update of my knowledge. I'm not afraid of facing new technologies, rather I'm looking forward to it."
     },
     "skills": {
       "title": "Skills"
