@@ -7,13 +7,13 @@ function Title() {
   const { text } = useLanguage();
 
   return (
-    <div className='max-w-full m-auto bg-gray-900'>
+    <div className='max-w-full m-auto bg-gray-900 min-h-screen'>
       <div className="max-w-5xl m-auto">
         <p className="text-center text-sm sm:text-xl pt-5 text-purple-500 lg:text-left lg:pl-8 xl:pl-0" data-aos="fade-up" data-aos-delay="200">
           Antonio Rufino Casasus
         </p>
       </div>
-      <section className='flex flex-col justify-center'>
+      <section className='flex flex-col justify-center mb-10 xl:mb-20 mt-10'>
         <div className="max-w-6xl mx-auto px-4 relative sm:px-6 xl:max-w-5xl z-30">
           <div
             className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none"
@@ -41,15 +41,15 @@ function Title() {
 
             <div className="max-w-5xl mx-auto text-center lg:flex xl:items-baseline mt-6 lg:mt-0 xl:-mt-2 xxl:mb-20">
               <div className='mobile:mb-4 lg:text-left lg:mt-16'>
-                <p className="text-2xl mobile:text-3xl sm:text-5xl md:text-6xl xl:text-6xl xxl:mb-10 xxl:text-7xl font-semibold italic" data-aos="fade-up">
+                <p className="text-4xl mobile:text-4xl sm:text-6xl md:text-7xl xl:text-7xl xxl:mb-10 xxl:text-8xl font-semibold italic" data-aos="fade-up">
                   {text.cover.section}
                 </p>
-                <p className="text-2xl mobile:text-3xl sm:text-6xl xl:text-7xl xxl:text-8xl font-black" data-aos="fade-up">
+                <p className="text-5xl mb-4 mobile:text-3xl sm:text-6xl xl:text-7xl xxl:text-8xl font-black" data-aos="fade-up">
                   {text.cover.work}
                 </p>
               </div>
               <div>
-                <img src={meImage} alt="Me" className='w-4/6 m-auto mobile:mb-4 surface:w-3/6 xl:w-4/6 xxl:w-5/6' />
+                <img src={meImage} alt="Me" className='w-4/6 m-auto mb-2 mobile:mb-4 surface:w-3/6 xl:w-4/6 xxl:w-5/6' />
               </div>
             </div>
             <About />

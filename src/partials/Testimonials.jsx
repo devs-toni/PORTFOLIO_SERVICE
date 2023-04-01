@@ -9,11 +9,11 @@ function Testimonials() {
   const { text } = useLanguage();
 
   return (
-    <section className='flex flex-col justify-center z-30 bg-gray-300 pb-10'>
-      <div className="relative w-3/6 mx-auto pointer-events-none z-30" aria-hidden="true">
+    <section className='flex flex-col justify-center z-30 bg-gray-300 pb-10 xl:pb-20 min-h-screen'>
+      <div className="relative w-3/6 mx-auto pointer-events-none z-30 xl:pt-10" aria-hidden="true">
         <PageIllustration />
       </div>
-      <div className="max-w-6xl mx-auto py-10  px-4 sm:px-6 sm:max-w-full superxl:h-full superxl:py-20 superxl:flex superxl:flex-col superxl:justify-between">
+      <div className="max-w-6xl mx-auto py-10 px-4 sm:px-6 sm:max-w-full superxl:h-full superxl:py-20 superxl:flex superxl:flex-col superxl:justify-between">
         <div>
           <div className="xl:max-w-5xl mx-auto text-center pb-2 md:pb-0 md:pr-10 lg:text-right xl:pr-0">
             <h2 className="text-3xl mobile:text-3xl sm:text-5xl font-normal italic sm:mb-6 xl:text-8xl text-gray-900">{text.opinions.title}</h2>

@@ -34,21 +34,21 @@ function Footer() {
               <div></div>
               {/* 4th block */}
               <div className="text-xxs m-auto text-center md:text-right md:text-sm">
-                <h6 className="text-gray-200 font-medium mb-1 text-xs md:text-sm">{text.footer.works}</h6>
+                <h6 className="text-gray-200 font-medium mb-1 text-lg md:text-lg">{text.footer.works}</h6>
                 <ul>
-                  <li className="mb-0 ">
+                  <li className="mb-2 mt-4">
                     <Link to="https://bianxi.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">BianxiStore</Link>
                   </li>
-                  <li className="mb-0">
+                  <li className="mb-2">
                     <Link to="https://moviehouse.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">MovieHouse</Link>
                   </li>
-                  <li className="mb-0">
+                  <li className="mb-2">
                     <Link to="https://tasks.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">TodoList</Link>
                   </li>
-                  <li className="mb-0">
+                  <li className="mb-2">
                     <Link to="https://calendar.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Calendar</Link>
                   </li>
-                  <li className="mb-0">
+                  <li className="mb-2">
                     <Link to="https://hangman.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Hangman</Link>
                   </li>
                 </ul>
@@ -91,10 +91,6 @@ function Footer() {
                 </Link>
               </li>
             </ul>
-
-            {/* Copyrights note */}
-            <div className="text-gray-400 text-xs md:text-sm text-center surface:hidden sm:block lg:hidden xl:block">&copy; arcprojects.es  |  All rights reserved.</div>
-
           </div>
 
         </div>

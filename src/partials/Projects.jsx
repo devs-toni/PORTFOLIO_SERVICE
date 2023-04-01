@@ -14,6 +14,7 @@ import moviehouse from '../images/moviehouse.png';
 import pokemon from '../images/pokemon-console.jpg';
 import shop from '../images/shop.png';
 import smooth from '../images/smooth.png';
+import lord from '../images/lord.png';
 import { RiArrowDropRightFill, RiArrowDropLeftFill } from "react-icons/ri";
 
 function Projects() {
@@ -74,8 +75,17 @@ function Projects() {
     },
     {
       id: 5,
+      img: lord,
+      back: "",
+      link:"src/images/TheLordOfTheRings-byAntonioRufinoCasasus.jar",
+      front: "",
+      name: "The Lord Of The Rings"
+    },
+    {
+      id: 5,
       img: pokemon,
       back: "Java 11",
+      link: "src/images/Pokemon-byAntonioRufinoCasasus.rar",
       front: "",
       name: "Pokemon Console"
     },
@@ -122,8 +132,8 @@ function Projects() {
   }
 
   return (
-    <section className='flex flex-col justify-center py-8'>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 all-works superxl:h-full superxl:py-10 superxl:flex superxl:flex-col superxl:justify-between">
+    <section className='flex flex-col justify-center py-10 xl:py-20 min-h-screen'>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 all-works superxl:h-full superxl: superxl:flex superxl:flex-col superxl:justify-between">
         <div className="text-center lg:pb-0 xl:pb-20 ">
           <h1 className="text-3xl sm:text-6xl xl:text-8xl font-bold lg:text-left">{text.works.title}</h1>
         </div>
@@ -146,9 +156,9 @@ function Projects() {
             </div>
 
           </div>
-          <div className='mx-auto mt-14 leading-10 text-center pb-10 hidden'>
+          <div className='mx-auto mt-14 leading-10 text-center hidden'>
             {
-              <div className={`bg-white w-3/6 m-auto text-black ${workActive === -1 && ' invisible'} p-10 rounded-sm`}>
+              <div className={`bg-white w-3/6 m-auto text-black ${workActive === -1 && ' invisible'} pt-10 rounded-sm`}>
                 <p className={`font-bold ${works.find(work => work.id === workActive).back.length === 0 && 'invisible'} ${workActive === -1 && 'invisible'}`}>Backend -
                   <span className='font-thin not-italic pl-2'>{works.find(work => work.id === workActive).back.length > 0 ? works.find(work => work.id === workActive).back : "Empty"}</span>
                 </p>

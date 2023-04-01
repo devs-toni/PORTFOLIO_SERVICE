@@ -10,7 +10,7 @@ const Work = ({ id, img, link, name, setActive }) => {
   return (
     <>
       <img src={img} alt={name} width="" height="" className='work-image' onClick={link && handleClick} onMouseEnter={() => setActive(id)} onMouseLeave={() => setActive(-1)} />
-      <p className="text-center mt-2 surface:hidden font-bold mb-8 italic">{name}</p>
+      <p className="text-center mt-2 surface:hidden font-bold italic">{name}</p>
     </>
   )
 }

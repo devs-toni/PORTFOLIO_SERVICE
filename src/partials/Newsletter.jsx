@@ -67,10 +67,10 @@ function Newsletter() {
                         required
                       />
                     </div>
-                    <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md">
+                    <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md mt-2">
                       <input
                         type="email"
-                        className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-2 mb-1 sm:mb-0 sm:mr-2 text-white placeholder-purple-400 text-xs md:text-lg lg:text-sm"
+                        className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 mr-4 rounded-sm px-4 py-2 mb-1 sm:mb-0 sm:mr-2 text-white placeholder-purple-400 text-xs md:text-lg lg:text-sm"
                         placeholder={text.contact.email}
                         aria-label={text.contact.email}
                         value={form.email}
@@ -78,7 +78,7 @@ function Newsletter() {
                         name="email"
                         required
                       />
-                      <input type="submit" className="btn text-purple-600 bg-purple-100 hover:bg-white shadow text-xs text-center inline-flex items-center px-2 justify-center md:text-lg lg:text-sm" href="#0" value={text.contact.send} />
+                      <input type="submit" className="btn text-purple-600 bg-purple-100 hover:bg-white shadow my-10 py-2 sm:my-0 lg:py-0 text-xs text-center inline-flex items-center px-2 justify-center md:text-lg lg:text-sm" href="#0" value={text.contact.send} />
                     </div>
                   </form>
                 </div>
