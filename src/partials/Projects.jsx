@@ -22,7 +22,7 @@ function Projects() {
   const { text } = useLanguage();
   const { database } = useGlobal();
   const listRef = useRef();
-  const [workActive, setWorkActive] = useState(-1);
+//  const [workActive, setWorkActive] = useState(-1);
 
   const works = [
     {
@@ -77,20 +77,22 @@ function Projects() {
       id: 5,
       img: lord,
       back: "",
-      link:"src/images/TheLordOfTheRings-byAntonioRufinoCasasus.jar",
+      link: "src/images/TheLordOfTheRings-byAntonioRufinoCasasus.jar",
       front: "",
-      name: "The Lord Of The Rings"
+      name: "The Lord Of The Rings",
+      download: true
     },
     {
-      id: 5,
+      id: 6,
       img: pokemon,
       back: "Java 11",
       link: "src/images/Pokemon-byAntonioRufinoCasasus.rar",
       front: "",
-      name: "Pokemon Console"
+      name: "Pokemon Console",
+      download: true
     },
     {
-      id: 6,
+      id: 7,
       img: calendar,
       link: "https://calendar.arcprojects.es",
       back: "",
@@ -98,7 +100,7 @@ function Projects() {
       name: "Calendar Js"
     },
     {
-      id: 7,
+      id: 8,
       img: shop,
       link: "https://shop.arcprojects.es",
       back: "",
@@ -106,7 +108,7 @@ function Projects() {
       name: "Buy Mock"
     },
     {
-      id: 8,
+      id: 9,
       img: hangman,
       link: "https://hangman.arcprojects.es",
       back: "",
@@ -114,7 +116,7 @@ function Projects() {
       name: "Hangman Game"
     },
     {
-      id: 9,
+      id: 10,
       img: calculator,
       link: "https://calculator.arcprojects.es",
       back: "",
@@ -146,9 +148,9 @@ function Projects() {
               </div>
               <div className='flex h-full w-full works-flex-container'>
                 {
-                  works.map(({ id, img, link, name }) => {
+                  works.map(({ id, img, link, name, download }) => {
                     return (
-                      id !== -1 && <Work key={uuid()} setActive={setWorkActive} id={id} img={img} link={link} name={name} />
+                      id !== -1 && <Work key={uuid()} id={id} img={img} link={link} name={name} isDownload={download} />
                     )
                   })
                 }
@@ -156,7 +158,7 @@ function Projects() {
             </div>
 
           </div>
-          <div className='mx-auto mt-14 leading-10 text-center hidden'>
+{/*           <div className='mx-auto mt-14 leading-10 text-center hidden'>
             {
               <div className={`bg-white w-3/6 m-auto text-black ${workActive === -1 && ' invisible'} pt-10 rounded-sm`}>
                 <p className={`font-bold ${works.find(work => work.id === workActive).back.length === 0 && 'invisible'} ${workActive === -1 && 'invisible'}`}>Backend -
@@ -167,7 +169,7 @@ function Projects() {
                 </p>
               </div>
             }
-          </div>
+          </div> */}
         </section>
       </div>
     </section>

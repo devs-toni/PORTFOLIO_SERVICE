@@ -1,15 +1,21 @@
 import { Navigate, NavLink, useNavigate } from "react-router-dom";
 
-const Work = ({ id, img, link, name, setActive }) => {
+const Work = ({ id, img, link, name, isDownload, ext }) => {
 
   const handleClick = ({ target }) => {
-    const newWindow = window.open(link, '_blank', 'noopener,noreferrer')
-    if (newWindow) newWindow.opener = null
+    if (isDownload) {
+      const newWindow = window.open(link, 'noopener,noreferrer')
+      if (newWindow) newWindow.opener = null
+    } else {
+      const newWindow = window.open(link, '_blank', 'noopener,noreferrer')
+      if (newWindow) newWindow.opener = null
+    }
+
   }
 
   return (
     <>
-      <img src={img} alt={name} width="" height="" className='work-image' onClick={link && handleClick} onMouseEnter={() => setActive(id)} onMouseLeave={() => setActive(-1)} />
+      <img src={img} alt={name} width="" height="" className='work-image' onClick={link && handleClick} />
       <p className="text-center mt-2 surface:hidden font-bold italic">{name}</p>
     </>
   )
