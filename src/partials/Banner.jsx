@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import cv from '../images/cv.pdf';
+import cvEng from '../images/antonio-rufino-casasus-v3-en.pdf';
+import cvSpa from '../images/antonio-rufino-casasus-v3-es.pdf';
 
 function Banner() {
 
@@ -13,24 +14,23 @@ function Banner() {
         <div className="fixed bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-50">
           <div className="bg-slate-800 text-slate-50 text-sm p-3 md:rounded shadow-lg flex justify-between">
             <div className="text-slate-500 inline-flex">
+              <span className="inline text-white font-medium mr-2">{text.banner.cv}</span>
               <a
-                className="font-medium hover:underline text-slate-50"
-                href="https://www.linkedin.com/in/antonio-rufino-casasus/"
-                target="_blank"
+                className="font-medium hover:underline text-emerald-400"
+                href={cvSpa}
                 rel="noreferrer"
+                download="cv_antonio-rufino-casasus.pdf"
               >
-                {text.banner.linkin}
+                {text.banner.downloadSpa}
               </a>{' '}
               <span className="italic px-1.5">or</span>{' '}
               <a
                 className="font-medium hover:underline text-emerald-400"
-                href={cv}
-                target="_blank"
+                href={cvEng}
                 rel="noreferrer"
-                download="CV_antonio-rufino-casasus"
+                download="cv_antonio-rufino-casasus.pdf"
               >
-                {text.banner.download}
-                <span className="hidden sm:inline">{text.banner.cv}</span>
+                {text.banner.downloadEng}
               </a>
             </div>
             <button className="text-slate-500 hover:text-slate-400 pl-2 ml-3 border-l border-gray-700" onClick={() => setBannerOpen(false)}>

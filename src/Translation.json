@@ -30,9 +30,9 @@
       "send": "Enviar"
     },
     "banner": {
-      "download": "Descarga",
+      "downloadEng": "Descarga",
       "cv": " mi Currículum",
-      "linkin": "Visita mi LinkedIn"
+      "downloadSpa": "Visita mi LinkedIn"
     },
     "footer": {
       "description": "Página web desarrollada por Antonio Rufino Casasus, MIT License.",
@@ -69,9 +69,9 @@
       "send": "Send"
     },
     "banner": {
-      "download": "Download",
-      "cv": " my Currículum",
-      "linkin": "Visit my LinkedIn"
+      "downloadEng": "English",
+      "cv": "Download my CV",
+      "downloadSpa": "Español"
     },
     "footer": {
       "description": "Webpage developed by Antonio Rufino Casasus, MIT License.",
