@@ -15,6 +15,7 @@ import pokemon from '../images/pokemon-console.jpg';
 import shop from '../images/shop.png';
 import smooth from '../images/smooth.png';
 import lord from '../images/lord.png';
+import expenditures from '../images/gastos.png';
 import { RiArrowDropRightFill, RiArrowDropLeftFill } from "react-icons/ri";
 
 function Projects() {
@@ -59,6 +60,14 @@ function Projects() {
     },
     {
       id: 3,
+      img: expenditures,
+      link: "https://gastos.arcprojects.es",
+      back: "@Kotlin @SpringBoot",
+      front: "@React @Typescript",
+      name: "Expenditures"
+    },
+    {
+      id: 4,
       img: wishlist,
       link: "https://tasks.arcprojects.es",
       back: "",
@@ -66,7 +75,7 @@ function Projects() {
       name: "ToDo List"
     },
     {
-      id: 4,
+      id: 5,
       img: bikers,
       link: "https://github.com/devs-toni/bikers",
       back: "@SpringBoot @SpringSecurity @SpringData @Thymeleaf",
@@ -74,7 +83,7 @@ function Projects() {
       name: "Bikers Social"
     },
     {
-      id: 5,
+      id: 6,
       img: lord,
       back: "",
       link: "https://github.com/devs-toni/lord-rings-java",
@@ -82,7 +91,7 @@ function Projects() {
       name: "The Lord Of The Rings"
     },
     {
-      id: 6,
+      id: 7,
       img: pokemon,
       back: "Java 11",
       link: "https://github.com/devs-toni/pokemon-java",
@@ -90,7 +99,7 @@ function Projects() {
       name: "Pokemon Console"
     },
     {
-      id: 7,
+      id: 8,
       img: calendar,
       link: "https://calendar.arcprojects.es",
       back: "",
@@ -98,7 +107,7 @@ function Projects() {
       name: "Calendar Js"
     },
     {
-      id: 8,
+      id: 9,
       img: shop,
       link: "https://shop.arcprojects.es",
       back: "",
@@ -106,7 +115,7 @@ function Projects() {
       name: "Buy Mock"
     },
     {
-      id: 9,
+      id: 10,
       img: hangman,
       link: "https://hangman.arcprojects.es",
       back: "",
@@ -114,7 +123,7 @@ function Projects() {
       name: "Hangman Game"
     },
     {
-      id: 10,
+      id: 11,
       img: calculator,
       link: "https://calculator.arcprojects.es",
       back: "",

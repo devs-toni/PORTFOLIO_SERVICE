@@ -12,6 +12,11 @@
         "description": "Spring Boot for microservices implementations"
       },
       {
+        "img": "kotlin",
+        "name": "Kotlin",
+        "description": "Object-oriented programming language Kotlin"
+      },
+      {
         "img": "php",
         "name": "PHP",
         "description": "Proficiency in PHP v8 programming language"
