@@ -41,7 +41,7 @@ jobs:
           context: .
           dockerfile: Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/arcp:${{ project.version }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/arcp:0.1.0
 
 #   - name: Deploy
 #     run: |
