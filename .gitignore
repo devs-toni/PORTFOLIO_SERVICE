@@ -4,5 +4,3 @@ package-lock.json
 dist
 dist-ssr
 *.local
-src/images/sergi.png
-src/images/cv.pdf
