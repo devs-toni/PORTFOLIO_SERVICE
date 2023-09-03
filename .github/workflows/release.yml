@@ -41,13 +41,8 @@ jobs:
           context: .
           dockerfile: Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/bianxi-api:${{ env.NEXT_RELEASE }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/arcp:${{ project.version }}
 
-      - name: Create GitHub Release
-        uses: ncipollo/release-action@v1.12.0
-        with:
-          tag: ${{ env.NEXT_RELEASE }}
-          token: ${{ secrets.GITHUB_TOKEN }}
 #   - name: Deploy
 #     run: |
 #       git config --global user.name devs-toni
