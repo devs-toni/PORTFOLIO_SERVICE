@@ -45,7 +45,7 @@ jobs:
           artifacts: 'arcprojects-v2-*.zip'
           generateReleaseNotes: true
           tag: ${{ env.NEXT_RELEASE }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           
       - name: Create SNAPSHOT
         run: npm version prerelease --preid SNAPSHOT --no-git-tag-version
