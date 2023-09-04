@@ -29,7 +29,6 @@ jobs:
       - name: Get package version
         run: |
           NEXT_RELEASE=$(jq '.version' package.json | sed 's/-SNAPSHOT.0//' | xargs npm version --no-git-tag-version | sed 's/v//')
-          echo "NEXT_RELEASE=$NEXT_RELEASE"
           echo "NEXT_RELEASE=$NEXT_RELEASE" >> $GITHUB_ENV
         shell: bash
 
