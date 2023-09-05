@@ -3,7 +3,7 @@
   "version": "0.1.5-SNAPSHOT.0",
   "homepage": "/",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
     "build:int": "env-cmd -f .env.integration npm run build && npm run zip-int",
