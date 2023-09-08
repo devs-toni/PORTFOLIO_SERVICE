@@ -1,9 +1,9 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
-import TestimonialImage01 from '../images/sergi.png';
-import TestimonialImage02 from '../images/david.jpg';
-import TestimonialImage03 from '../images/joe.jpg';
+import TestimonialImage01 from '../assets/reviews/sergi.png';
+import TestimonialImage02 from '../assets/reviews/david.jpg';
+import TestimonialImage03 from '../assets/reviews/joe.jpg';
 import PageIllustration from './PageIllustration';
 
 function Testimonials() {

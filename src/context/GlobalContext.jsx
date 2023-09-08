@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import Db from '../Database.json';
+import Db from '../db/Database.json';
 
 
 const GlobalContext = createContext();

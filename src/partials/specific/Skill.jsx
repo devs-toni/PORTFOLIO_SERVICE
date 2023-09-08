@@ -7,7 +7,7 @@ const Skill = ({ id, img, name, description }) => {
   useEffect(() => {
     const getImage = async () => {
       //const imgAndExt = img.split('.')
-      await import(`../../images/${img}.png`).then(img => setImage(img.default));
+      await import(`../../assets/skills/${img}.png`).then(img => setImage(img.default));
     }
     getImage();
   }, [])

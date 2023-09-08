@@ -1,5 +1,5 @@
 import { useLanguage } from '../context/LanguageContext';
-import meImage from '../images/me-dark.png';
+import meImage from '../assets/intro/me-dark.png';
 import About from './specific/About';
 
 function Title() {

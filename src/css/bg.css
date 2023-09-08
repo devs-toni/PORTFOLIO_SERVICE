@@ -20,21 +20,22 @@
   z-index: 1;
 }
 .works-container__arrow {
-  width: 100px;
-  font-size: 15em;
+  width: 60px;
+  font-size: 10em;
   transition: all 0.3s ease-in;
   cursor: pointer;
   position: absolute;
 }
 .works-container__arrow:hover {
-  transform: scale(1.2);
+  transform: scale(3);
+  color: gray;
 }
 
 .left-arrow {
-  left: -7%;
+  left: -5%;
 }
 .right-arrow {
-  right: -7%;
+  right: -5%;
 }
 
 .work-image {
@@ -43,7 +44,7 @@
   width: 100%;
   max-width: 100%;
   transition: all 0.3s ease-in;
-  border-radius: 2px;
+  border-radius: 50px;
   z-index: 100;
   cursor: pointer;
 }

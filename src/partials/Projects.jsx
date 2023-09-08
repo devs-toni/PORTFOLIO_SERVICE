@@ -1,29 +1,27 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import uuid from 'react-uuid';
 import { useGlobal } from '../context/GlobalContext';
 import { useLanguage } from '../context/LanguageContext';
 //import PageIllustration from './PageIllustration';
-import Work from './Work';
-import bianxi from '../images/bianxi.png';
-//import wishlist from '../images/wishlist.png';
-//import calculator from '../images/calculator.png';
-//import calendar from '../images/calendar.png';
-//import hangman from '../images/hangman.png';
-//import bikers from '../images/bikers.jpg';
-import moviehouse from '../images/moviehouse.png';
-//import pokemon from '../images/pokemon-console.jpg';
-//import shop from '../images/shop.png';
-//import smooth from '../images/smooth.png';
-//import lord from '../images/lord.png';
-//import expenditures from '../images/gastos.png';
+import Work from './specific/Work';
+import bianxi from '../assets/works/bianxi.png';
+//import wishlist from '../assets/works/wishlist.png';
+//import calculator from '../assets/works/calculator.png';
+//import calendar from '../assets/works/calendar.png';
+//import hangman from '../assets/works/hangman.png';
+//import bikers from '../assets/works/bikers.jpg';
+import moviehouse from '../assets/works/moviehouse.png';
+//import pokemon from '../assets/works/pokemon-console.jpg';
+//import shop from '../assets/works/shop.png';
+//import smooth from '../assets/works/smooth.png';
+//import lord from '../assets/works/lord.png';
+//import expenditures from '../assets/works/gastos.png';
 import { RiArrowDropRightFill, RiArrowDropLeftFill } from "react-icons/ri";
 
 function Projects() {
 
   const { text } = useLanguage();
-  const { database } = useGlobal();
   const listRef = useRef();
-//  const [workActive, setWorkActive] = useState(-1);
 
   const works = [
     {
@@ -124,7 +122,7 @@ function Projects() {
     }*/
   ];
 
-  const handleClick = (direction) => {
+  const handleClick = (direction, e) => {
     if (direction === 'back') {
       listRef.current.scrollLeft -= (listRef.current.offsetWidth);
     } else if (direction === 'forward') {
@@ -142,12 +140,12 @@ function Projects() {
           <div className="mx-auto relative">
             <div className='works-container' ref={listRef} data-aos="fade-up" data-aos-delay="400">
               <div className="works-container__arrows">
-                <RiArrowDropLeftFill className='works-container__arrow left-arrow' onClick={() => handleClick('back')} />
-                <RiArrowDropRightFill className='works-container__arrow right-arrow' onClick={() => handleClick('forward')} />
+                <RiArrowDropLeftFill className={`works-container__arrow left-arrow ${offset === 0 ? "hidden" : "visible"}`} onClick={(e) => handleClick('back', e)} />
+                <RiArrowDropRightFill className='works-container__arrow right-arrow' onClick={(e) => handleClick('forward', e)} />
               </div>
               <div className='flex h-full w-full works-flex-container'>
                 {
-                  works.map(({ id, img, link, name, download , extension }) => {
+                  works.map(({ id, img, link, name, download, extension }) => {
                     return (
                       id !== -1 && <Work key={uuid()} id={id} img={img} link={link} name={name} isDownload={download} ext={extension} />
                     )
@@ -157,7 +155,7 @@ function Projects() {
             </div>
 
           </div>
-{/*           <div className='mx-auto mt-14 leading-10 text-center hidden'>
+          {/*           <div className='mx-auto mt-14 leading-10 text-center hidden'>
             {
               <div className={`bg-white w-3/6 m-auto text-black ${workActive === -1 && ' invisible'} pt-10 rounded-sm`}>
                 <p className={`font-bold ${works.find(work => work.id === workActive).back.length === 0 && 'invisible'} ${workActive === -1 && 'invisible'}`}>Backend -

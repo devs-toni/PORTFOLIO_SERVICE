@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import cvEng from '../images/antonio-rufino-casasus-v3-en.pdf';
-import cvSpa from '../images/antonio-rufino-casasus-v3-es.pdf';
+import cvEng from '../assets/downloads/antonio-rufino-casasus-v3-en.pdf';
+import cvSpa from '../assets/downloads/antonio-rufino-casasus-v3-es.pdf';
 
 function Banner() {
 

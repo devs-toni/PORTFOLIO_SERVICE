@@ -17,6 +17,26 @@
         "description": "Object-oriented programming language Kotlin"
       },
       {
+        "img": "micronaut",
+        "name": "Micronaut",
+        "description": "Micronaut Framework"
+      },
+      {
+        "img": "tdd",
+        "name": "TDD",
+        "description": "Test Driven Development"
+      },
+      {
+        "img": "junit",
+        "name": "JUnit & Mockito",
+        "description": "JUnit y Mockito for testing"
+      },
+      {
+        "img": "testcontainers",
+        "name": "TestContainers",
+        "description": "TestContainers for Integration Tests with Docker Instances"
+      },
+      {
         "img": "php",
         "name": "PHP",
         "description": "Proficiency in PHP v8 programming language"
@@ -52,26 +72,6 @@
         "description": "Javascript usage from early versions to ECMAScript2020"
       },
       {
-        "img": "git",
-        "name": "Git",
-        "description": "Git as version control software"
-      },
-      {
-        "img": "docker",
-        "name": "Docker",
-        "description": "Docker for build, share, and run applications."
-      },
-      {
-        "img": "elastic",
-        "name": "ElasticSearch",
-        "description": "Handling queries for data retrieval in the search engine"
-      },
-      {
-        "img": "javaFx",
-        "name": "JavaFX",
-        "description": "Creation of visual interfaces developed with JavaFx"
-      },
-      {
         "img": "sass",
         "name": "Sass",
         "description": "Styling implementation with Sass."
@@ -95,6 +95,36 @@
         "img": "html",
         "name": "HTML5",
         "description": "Handling HTML tagging language"
+      },
+      {
+        "img": "git",
+        "name": "Git",
+        "description": "Git as version control software"
+      },
+      {
+        "img": "actions",
+        "name": "GitHub Actions",
+        "description": "CI/CD with GitHub Actions"
+      },
+      {
+        "img": "kubernetes",
+        "name": "Kubernetes",
+        "description": "Kubernetes for manage build instances"
+      },
+      {
+        "img": "docker",
+        "name": "Docker",
+        "description": "Docker for build, share, and run applications."
+      },
+      {
+        "img": "elastic",
+        "name": "ElasticSearch",
+        "description": "Handling queries for data retrieval in the search engine"
+      },
+      {
+        "img": "javaFx",
+        "name": "JavaFX",
+        "description": "Creation of visual interfaces developed with JavaFx"
       }
     ]
   }
