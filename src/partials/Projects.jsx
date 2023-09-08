@@ -2,20 +2,20 @@ import React, { useRef, useState } from 'react';
 import uuid from 'react-uuid';
 import { useGlobal } from '../context/GlobalContext';
 import { useLanguage } from '../context/LanguageContext';
-import PageIllustration from './PageIllustration';
+//import PageIllustration from './PageIllustration';
 import Work from './Work';
 import bianxi from '../images/bianxi.png';
-import wishlist from '../images/wishlist.png';
-import calculator from '../images/calculator.png';
-import calendar from '../images/calendar.png';
-import hangman from '../images/hangman.png';
-import bikers from '../images/bikers.jpg';
+//import wishlist from '../images/wishlist.png';
+//import calculator from '../images/calculator.png';
+//import calendar from '../images/calendar.png';
+//import hangman from '../images/hangman.png';
+//import bikers from '../images/bikers.jpg';
 import moviehouse from '../images/moviehouse.png';
-import pokemon from '../images/pokemon-console.jpg';
-import shop from '../images/shop.png';
-import smooth from '../images/smooth.png';
-import lord from '../images/lord.png';
-import expenditures from '../images/gastos.png';
+//import pokemon from '../images/pokemon-console.jpg';
+//import shop from '../images/shop.png';
+//import smooth from '../images/smooth.png';
+//import lord from '../images/lord.png';
+//import expenditures from '../images/gastos.png';
 import { RiArrowDropRightFill, RiArrowDropLeftFill } from "react-icons/ri";
 
 function Projects() {
@@ -42,14 +42,14 @@ function Projects() {
       front: "@React",
       name: "Bianxi Store"
     },
-    {
+ /*   {
       id: 1,
       img: smooth,
       link: "https://smoothsick.arcprojects.es",
       back: "@Node @Express @MongoDb",
       front: "@React",
       name: "Smoothsick"
-    },
+    }*/,
     {
       id: 2,
       img: moviehouse,
@@ -57,7 +57,7 @@ function Projects() {
       back: "@PHP",
       front: "@HTML @CSS @Javascript",
       name: "Movie House"
-    },
+    },/*
     {
       id: 3,
       img: expenditures,
@@ -73,14 +73,6 @@ function Projects() {
       back: "",
       front: "@React @LocalStorage",
       name: "ToDo List"
-    },
-    {
-      id: 5,
-      img: bikers,
-      link: "https://github.com/devs-toni/bikers",
-      back: "@SpringBoot @SpringSecurity @SpringData @Thymeleaf",
-      front: "@HTML @CSS @Javascript",
-      name: "Bikers Social"
     },
     {
       id: 6,
@@ -129,7 +121,7 @@ function Projects() {
       back: "",
       front: "@HTML @CSS @Javascript",
       name: "Calculator Js"
-    }
+    }*/
   ];
 
   const handleClick = (direction) => {
