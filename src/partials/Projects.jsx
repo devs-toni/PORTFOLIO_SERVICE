@@ -2,21 +2,19 @@ import React, { useEffect, useRef, useState } from 'react';
 import uuid from 'react-uuid';
 import { useGlobal } from '../context/GlobalContext';
 import { useLanguage } from '../context/LanguageContext';
-//import PageIllustration from './PageIllustration';
-import Work from './specific/Work';
+import PageIllustration from './PageIllustration';
 import bianxi from '../assets/works/bianxi.png';
-//import wishlist from '../assets/works/wishlist.png';
-//import calculator from '../assets/works/calculator.png';
-//import calendar from '../assets/works/calendar.png';
-//import hangman from '../assets/works/hangman.png';
-//import bikers from '../assets/works/bikers.jpg';
+import wishlist from '../assets/works/wishlist.png';
+import calculator from '../assets/works/calculator.png';
+import calendar from '../assets/works/calendar.png';
+import hangman from '../assets/works/hangman.png';
+import bikers from '../assets/works/bikers.jpg';
 import moviehouse from '../assets/works/moviehouse.png';
-//import pokemon from '../assets/works/pokemon-console.jpg';
-//import shop from '../assets/works/shop.png';
-//import smooth from '../assets/works/smooth.png';
-//import lord from '../assets/works/lord.png';
-//import expenditures from '../assets/works/gastos.png';
-import { RiArrowDropRightFill, RiArrowDropLeftFill } from "react-icons/ri";
+import shop from '../assets/works/shop.png';
+import smooth from '../assets/works/smooth.png';
+import lord from '../assets/works/lord.png';
+import expenditures from '../assets/works/gastos.png';
+import Slider from './specific/Slider/Slider';
 
 function Projects() {
 
@@ -25,14 +23,6 @@ function Projects() {
 
   const works = [
     {
-      id: -1,
-      img: {},
-      link: "",
-      back: "Backend: ",
-      front: "Frontend:",
-      name: ""
-    },
-    {
       id: 0,
       img: bianxi,
       link: "https://bianxi.arcprojects.es",
@@ -40,14 +30,14 @@ function Projects() {
       front: "@React",
       name: "Bianxi Store"
     },
- /*   {
+    {
       id: 1,
       img: smooth,
       link: "https://smoothsick.arcprojects.es",
       back: "@Node @Express @MongoDb",
       front: "@React",
       name: "Smoothsick"
-    }*/,
+    },
     {
       id: 2,
       img: moviehouse,
@@ -55,7 +45,7 @@ function Projects() {
       back: "@PHP",
       front: "@HTML @CSS @Javascript",
       name: "Movie House"
-    },/*
+    },
     {
       id: 3,
       img: expenditures,
@@ -79,14 +69,6 @@ function Projects() {
       link: "https://github.com/devs-toni/lord-rings-java",
       front: "",
       name: "The Lord Of The Rings"
-    },
-    {
-      id: 7,
-      img: pokemon,
-      back: "Java 11",
-      link: "https://github.com/devs-toni/pokemon-java",
-      front: "",
-      name: "Pokemon Console"
     },
     {
       id: 8,
@@ -119,7 +101,7 @@ function Projects() {
       back: "",
       front: "@HTML @CSS @Javascript",
       name: "Calculator Js"
-    }*/
+    }
   ];
 
   const handleClick = (direction, e) => {
@@ -132,29 +114,17 @@ function Projects() {
 
   return (
     <section className='flex flex-col justify-center py-10 xl:py-20 min-h-screen'>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 all-works superxl:h-full superxl: superxl:flex superxl:flex-col superxl:justify-between">
-        <div className="text-center lg:pb-0 xl:pb-20 ">
+      <div className="max-w-7xl mx-auto px-4 xxl:max-w-full sm:px-6 superxl:h-full superxl:flex superxl:flex-col superxl:justify-between">
+        <div className="text-center mb-10 lg:pb-0 xl:pb-20 ">
           <h1 className="text-3xl sm:text-6xl xl:text-8xl font-bold lg:text-left">{text.works.title}</h1>
         </div>
-        <section>
-          <div className="mx-auto relative">
-            <div className='works-container' ref={listRef} data-aos="fade-up" data-aos-delay="400">
+        <section >
+            {/*</div><div className='works-container' ref={listRef} data-aos="fade-up" data-aos-delay="400">
               <div className="works-container__arrows">
-                <RiArrowDropLeftFill className={`works-container__arrow left-arrow ${offset === 0 ? "hidden" : "visible"}`} onClick={(e) => handleClick('back', e)} />
-                <RiArrowDropRightFill className='works-container__arrow right-arrow' onClick={(e) => handleClick('forward', e)} />
-              </div>
-              <div className='flex h-full w-full works-flex-container'>
-                {
-                  works.map(({ id, img, link, name, download, extension }) => {
-                    return (
-                      id !== -1 && <Work key={uuid()} id={id} img={img} link={link} name={name} isDownload={download} ext={extension} />
-                    )
-                  })
-                }
-              </div>
-            </div>
+         
+              </div>*/}
+              <Slider images={works} />
 
-          </div>
           {/*           <div className='mx-auto mt-14 leading-10 text-center hidden'>
             {
               <div className={`bg-white w-3/6 m-auto text-black ${workActive === -1 && ' invisible'} pt-10 rounded-sm`}>
