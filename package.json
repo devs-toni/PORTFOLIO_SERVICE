@@ -6,14 +6,12 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "build:int": "env-cmd -f .env.integration npm run build && npm run zip-int",
     "build:prod": "npm run build && npm run zip-prod",
-    "zip-int": "cd dist; zip -r ../arcprojects-v2_${npm_package_version}_int.zip * .htaccess",
+    "lint": "eslint . --ext js,jsx",
     "zip-prod": "cd dist; zip -r ../arcprojects-v2_$npm_package_version.zip * .htaccess"
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
-    "env-cmd": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",

@@ -25,12 +25,12 @@ function Newsletter() {
 
   return (
     <section className='w-5/6 m-auto border border-b-1 border-t-0 border-r-0 border-l-0 border-gray-100 border-opacity-20 z-30'>
-      <div className="max-w-6xl m-auto px-4 sm:px-6 mobile:pb-10 surface:pb-6">
+      <div className="max-w-6xl m-auto px-4 sm:px-6 mobile:pb-10 surface:pb-40">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-3xl sm:text-6xl xl:text-8xl mb-4 mobile:mb-8 surface:mb-2 sm:mb-14 md:-ml-10 lg:mb-4 xl:mb-14 font-bold lg:text-left">{text.contact.first}</h1>
         </div>
         {/* CTA box */}
-        <div className="relative bg-purple-600 px-8 md:px-12 mb-4 surface:mb-2 sm:mb-4" data-aos="fade-up">
+        <div className="relative bg-purple-600 px-8 md:px-12 mb-4 surface:mb-2 sm:mb-4 top" data-aos="fade-up">
           {
             loading
               ?

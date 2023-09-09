@@ -40,9 +40,9 @@ function Footer() {
                     <Link to="https://bianxi.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">BianxiStore</Link>
                   </li>
                   <li className="mb-2">
-                    <Link to="https://moviehouse.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">MovieHouse</Link>
+                    <Link to="https://movies.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">MovieHouse</Link>
                   </li>
-                  <li className="mb-2">
+                 {/* <li className="mb-2">
                     <Link to="https://gastos.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Expenses</Link>
                   </li>
                   <li className="mb-2">
@@ -53,7 +53,7 @@ function Footer() {
                   </li>
                   <li className="mb-2">
                     <Link to="https://hangman.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Hangman</Link>
-                  </li>
+                  </li>*/}
                 </ul>
               </div>
             </div>

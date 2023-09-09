@@ -32,9 +32,6 @@ jobs:
           echo "NEXT_RELEASE=$NEXT_RELEASE" >> $GITHUB_ENV
         shell: bash
 
-      - name: Build Integration
-        run: npm run build:int
-
       - name: Build Production
         run: npm run build:prod
 

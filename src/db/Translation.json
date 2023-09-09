@@ -48,7 +48,8 @@
       "title": "About",
       "title_me": "me",
       "description1": "Hi, my name is Antonio, and I'm a spanish based full stack developer waiting to set up home wherever destiny decides, as long as english is spoken.",
-      "description2": "1+ years of experience developing and maintaining software applications. I've designed and developed advanced applications from use cases and functional requirements. I research new technologies to ensure a constant update of my knowledge. I'm not afraid of facing new technologies, rather I'm looking forward to it."
+      "description2": "2+ years of experience developing and maintaining software applications. I have designed and developed advanced applications from user stories, use cases and functional requirements. I research new technologies to ensure a constant update of my knowledge. I'm not afraid of facing new technologies, I'm excited about it.", 
+      "description3": "I am used to work in projects with clean architectures and code, always using agile methodologies, generating testable, scalable and therefore  maintainable applications."
     },
     "skills": {
       "title": "Skills"
