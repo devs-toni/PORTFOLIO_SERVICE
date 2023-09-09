@@ -7,20 +7,20 @@ const Newsletter = () => {
 
   const { text } = useLanguage();
 
-  const initialForm = {
-    email: '',
-    comments: ''
-  }
-
-  const {
-    form,
-    errors,
-    loading,
-    response,
-    handleChange,
-    handleSubmit,
-    handleBlur
-  } = useForm(initialForm);
+  //const initialForm = {
+  //  email: '',
+  //  comments: ''
+  //}
+  //
+  //const {
+  //  form,
+  //  errors,
+  //  loading,
+  //  response,
+  //  handleChange,
+  //  handleSubmit,
+  //  handleBlur
+  //} = useForm(initialForm);
 
   return (
     <section className='w-5/6 m-auto border border-b-1 border-t-0 border-r-0 border-l-0 border-gray-100 border-opacity-20 z-30'>
@@ -52,7 +52,11 @@ const Newsletter = () => {
                     <h3 className="h3 text-white mb-1 mobile:text-lg md:text-2xl lg:text-lg">{text.contact.title}</h3>
                     <p className="text-purple-200 text-xxs mobile:text-xs md:text-lg lg:text-sm">{text.contact.description}</p>
                   </div>
-                  <form action='f2834b9068e7ce4a793c0fa0d1519fd5' className="w-full lg:w-1/2 pb-4" onSubmit={handleSubmit}>
+                  <form
+                    action='f2834b9068e7ce4a793c0fa0d1519fd5'
+                    className="w-full lg:w-1/2 pb-4"
+                  //onSubmit={handleSubmit}
+                  >
                     <div className='w-full flex justify-center'>
                       <textarea
                         type="text"
@@ -60,8 +64,8 @@ const Newsletter = () => {
                         className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-2 mb-2 surface:mb-1 text-white placeholder-purple-400 resize-none h-24 text-xs surface:max-w-xs sm:max-w-md md:text-lg lg:text-sm"
                         placeholder={text.contact.msg}
                         aria-label={text.contact.msg}
-                        value={form.comments}
-                        onChange={handleChange}
+                        //value={form.comments}
+                        //onChange={handleChange}
                         name="comments"
                         required
                       />
@@ -72,12 +76,16 @@ const Newsletter = () => {
                         className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 mr-4 rounded-sm px-4 py-2 mb-1 sm:mb-0 sm:mr-2 text-white placeholder-purple-400 text-xs md:text-lg lg:text-sm"
                         placeholder={text.contact.email}
                         aria-label={text.contact.email}
-                        value={form.email}
-                        onChange={handleChange}
+                        //value={form.email}
+                        //onChange={handleChange}
                         name="email"
                         required
                       />
-                      <input type="submit" className="btn text-purple-600 bg-purple-100 hover:bg-white shadow my-10 py-2 sm:my-0 lg:py-0 text-xs text-center inline-flex items-center px-2 justify-center md:text-lg lg:text-sm" href="#0" value={text.contact.send} />
+                      <input
+                        type="submit"
+                        className="btn text-purple-600 bg-purple-100 hover:bg-white shadow my-10 py-2 sm:my-0 lg:py-0 text-xs text-center inline-flex items-center px-2 justify-center md:text-lg lg:text-sm"
+                        href="#0"
+                        value={text.contact.send} />
                     </div>
                   </form>
                 </div>
