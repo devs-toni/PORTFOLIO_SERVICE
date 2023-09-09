@@ -22,7 +22,7 @@ function Home() {
       </main>
       <Testimonials />
       <div className='h-fit flex flex-col items-center min-h-screen superxl:justify-between py-10 xl:py-20'>
-        <Newsletter />
+       {/*<Newsletter />*/}
         <Footer />
       </div>
       <Banner />
