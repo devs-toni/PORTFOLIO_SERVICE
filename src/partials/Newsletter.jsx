@@ -3,13 +3,12 @@ import { useLanguage } from '../context/LanguageContext';
 import { useForm } from '../hooks/useForm';
 import Loader from './Loader';
 
-
 const initialForm = {
   email: '',
   comments: ''
 }
 
-function Newsletter() {
+const Newsletter = () => {
 
   const { text } = useLanguage();
 
