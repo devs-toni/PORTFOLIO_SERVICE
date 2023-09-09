@@ -3,24 +3,24 @@ import { useLanguage } from '../context/LanguageContext';
 import { useForm } from '../hooks/useForm';
 import Loader from './Loader';
 
+const initialForm = {
+  email: '',
+  comments: ''
+}
+
 const Newsletter = () => {
 
   const { text } = useLanguage();
 
-  //const initialForm = {
-  //  email: '',
-  //  comments: ''
-  //}
-  //
-  //const {
-  //  form,
-  //  errors,
-  //  loading,
-  //  response,
-  //  handleChange,
-  //  handleSubmit,
-  //  handleBlur
-  //} = useForm(initialForm);
+  const {
+    form,
+    errors,
+    loading,
+    response,
+    handleChange,
+    handleSubmit,
+    handleBlur
+  } = useForm(initialForm);
 
   return (
     <section className='w-5/6 m-auto border border-b-1 border-t-0 border-r-0 border-l-0 border-gray-100 border-opacity-20 z-30'>
@@ -28,13 +28,12 @@ const Newsletter = () => {
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-3xl sm:text-6xl xl:text-8xl mb-4 mobile:mb-8 surface:mb-2 sm:mb-14 md:-ml-10 lg:mb-4 xl:mb-14 font-bold lg:text-left">{text.contact.first}</h1>
         </div>
-        {/* CTA box */}
         <div className="relative bg-purple-600 px-8 md:px-12 mb-4 surface:mb-2 sm:mb-4 top" data-aos="fade-up">
           {
-          //  loading
-          //    ?
-          //    <Loader />
-          //    :
+            loading
+              ?
+              <Loader />
+              :
               <>
                 <div className="absolute right-0 top-0 -ml-40 pointer-events-none" aria-hidden="true">
                   <svg width="238" height="110" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,9 +52,9 @@ const Newsletter = () => {
                     <p className="text-purple-200 text-xxs mobile:text-xs md:text-lg lg:text-sm">{text.contact.description}</p>
                   </div>
                   <form
-                    action='f2834b9068e7ce4a793c0fa0d1519fd5'
+                    action='c400cd5fde0d9fa2a7ea1bc8ea5e5de0'
                     className="w-full lg:w-1/2 pb-4"
-                  //onSubmit={handleSubmit}
+                    onSubmit={handleSubmit}
                   >
                     <div className='w-full flex justify-center'>
                       <textarea
@@ -64,8 +63,8 @@ const Newsletter = () => {
                         className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-2 mb-2 surface:mb-1 text-white placeholder-purple-400 resize-none h-24 text-xs surface:max-w-xs sm:max-w-md md:text-lg lg:text-sm"
                         placeholder={text.contact.msg}
                         aria-label={text.contact.msg}
-                        //value={form.comments}
-                        //onChange={handleChange}
+                        value={form.comments}
+                        onChange={handleChange}
                         name="comments"
                         required
                       />
@@ -76,8 +75,8 @@ const Newsletter = () => {
                         className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 mr-4 rounded-sm px-4 py-2 mb-1 sm:mb-0 sm:mr-2 text-white placeholder-purple-400 text-xs md:text-lg lg:text-sm"
                         placeholder={text.contact.email}
                         aria-label={text.contact.email}
-                        //value={form.email}
-                        //onChange={handleChange}
+                        value={form.email}
+                        onChange={handleChange}
                         name="email"
                         required
                       />

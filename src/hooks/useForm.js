@@ -40,6 +40,8 @@ export const useForm = (initialForm) => {
         setResponse(false)
       }, 5000);
       setForm(initialForm);
+    }).catch(err => {
+      console.log(err);
     })
   };
 
