@@ -31,10 +31,10 @@ const Newsletter = () => {
         {/* CTA box */}
         <div className="relative bg-purple-600 px-8 md:px-12 mb-4 surface:mb-2 sm:mb-4 top" data-aos="fade-up">
           {
-            loading
-              ?
-              <Loader />
-              :
+          //  loading
+          //    ?
+          //    <Loader />
+          //    :
               <>
                 <div className="absolute right-0 top-0 -ml-40 pointer-events-none" aria-hidden="true">
                   <svg width="238" height="110" fill="none" xmlns="http://www.w3.org/2000/svg">
