@@ -17,10 +17,6 @@ const About = () => {
           <p className='text-justify text-xxs leading-5 w-5/6 m-auto mobile:text-sm mobile:leading-6 surface:text-xs sm:text-lg lg:text-left sm:w-5/6 sm:leading-8 lg:text-sm xl:w-full xxl:text-xl xxl:w-full superxl:leading-8'>{text.about.description3}</p>
         </div>
       </div>
-{/*       <div className='container md:max-w-sm text-center md:text-left'>
-        <span className='font-semibold mr-1'>"{text.about.conclusion}"</span>
-        {text.about.slogan}
-      </div> */}
     </div>
   )
 }

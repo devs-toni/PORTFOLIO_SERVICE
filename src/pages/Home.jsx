@@ -11,7 +11,7 @@ import Footer from '../partials/Footer';
 
 function Home() {
   return (
-    <div className="flex flex-col overflow-hidden">
+    <div className="flex flex-col overflow-hidden font-architects-daughter">
       <main className="grow z-30">
         <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
           <PageIllustration />

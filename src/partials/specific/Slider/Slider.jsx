@@ -36,11 +36,11 @@ const Slider = ({ images }) => {
                   <>
                     <img src={image} alt='imagen' onClick={() => openLink(link)} className={st.image} />
                     <div className={st.data}>
-                      <h1 className='mt-8 font-bold text-4xl font-architects-daughter mb-2 md:text-2xl mobile:text-base'>{name}</h1>
-                      <h2 className='mt-4 text-2xl font-architects-daughter md:text-lg mobile:text-sm'>{technologies}</h2>
-                      <h2 className='mt-6 text-lg text-center font-architects-daughter max-w-7xl md:text-base  mobile:text-sm'>{description}</h2>
-                      <h2 className='mt-6 text-lg text-center font-architects-daughter max-w-7xl md:text-base  mobile:text-sm'>{description2}</h2>
-                      <h2 className='mt-6 text-lg text-center font-architects-daughter mb-4 max-w-7xl md:text-base  mobile:text-sm'>{description3}</h2>
+                      <h1 className='mt-8 font-bold text-4xl mb-2 md:text-2xl mobile:text-base'>{name}</h1>
+                      <h2 className='mt-4 text-2xl md:text-lg mobile:text-sm'>{technologies}</h2>
+                      <h2 className='mt-6 text-lg text-center max-w-7xl md:text-base  mobile:text-sm'>{description}</h2>
+                      <h2 className='mt-6 text-lg text-center max-w-7xl md:text-base  mobile:text-sm'>{description2}</h2>
+                      <h2 className='mt-6 text-lg text-center mb-4 max-w-7xl md:text-base  mobile:text-sm'>{description3}</h2>
                     </div>
                   </>
                 )
