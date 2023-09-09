@@ -29,12 +29,12 @@ const Slider = ({ images }) => {
       {
         images.map(({ id, name, image, technologies, description, description2, description3, link }, index) => {
           return (
-            <div className={currentImage === index ? `${st.slide} ${st.active}` : `${st.slide}`} >
+            <div key={index}  className={currentImage === index ? `${st.slide} ${st.active}` : `${st.slide}`} >
               {
                 currentImage === index &&
                 (
                   <>
-                    <img key={index} src={image} alt='imagen' onClick={() => openLink(link)} className={st.image} />
+                    <img src={image} alt='imagen' onClick={() => openLink(link)} className={st.image} />
                     <div className={st.data}>
                       <h1 className='mt-8 font-bold text-4xl font-architects-daughter mb-2 md:text-2xl mobile:text-base'>{name}</h1>
                       <h2 className='mt-4 text-2xl font-architects-daughter md:text-lg mobile:text-sm'>{technologies}</h2>
