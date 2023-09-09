@@ -142,18 +142,19 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
   .image {
     height: 200px;
   }
   .arrow {
-    margin-top: -75%;
+    margin-top: -85%;
   }
 }
 
 @media screen and (max-width: 450px) {
+
   .image {
-    width: 100%;
+    width: 294;
     height: 180px;
   }
   .arrow {
@@ -171,8 +172,13 @@
 }
 
 @media screen and (max-width: 375px) {
+  .container {
+    width: 294px;
+    min-width: 294px;
+  }
   .image {
-    width: 100%;
+    width: 294px;
+    min-width: 294px;
     height: 180px;
   }
   .arrow {
@@ -189,7 +195,7 @@
     height: 500px;
   }
   .arrow:hover {
-   width: 120px;
+    width: 120px;
     font-size: 2em;
     margin-right: 1%;
     margin-top: -145%;
