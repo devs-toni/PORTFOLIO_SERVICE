@@ -31,7 +31,7 @@ function Projects() {
     {
       id: 1,
       name: "Movie House",
-      image: moviehouse,
+      image: movies,
       technologies: "< PHP />",
       description: "... backend developed with PHP",
       description2: "... frontend developed with JavaScript, CSS and HTML",
