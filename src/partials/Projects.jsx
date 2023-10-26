@@ -7,7 +7,7 @@ import movies from '../assets/works/movies.png';
 //import calendar from '../assets/works/calendar.png';
 //import hangman from '../assets/works/hangman.png';
 //import shop from '../assets/works/shop.png';
-//import smooth from '../assets/works/smooth.png';
+import smoothsick from '../assets/works/smooth.png';
 //import lord from '../assets/works/lord.png';
 import expenditures from '../assets/works/gastos.png';
 import Slider from './specific/Slider/Slider';
@@ -30,6 +30,16 @@ function Projects() {
     },
     {
       id: 1,
+      name: "Smoothsick",
+      image: smoothsick,
+      technologies: "< NODE & TYPESCRIPT + REACT />",
+      description: "... backend developed with Node, using Typescript, Express.js and Cloudinary, data persistence managed with MongoDB using Atlas and dependencies management with NPM. Clean code, 100% scalable and maintainable",
+      description2: "...frontend developed with React and styles implemented with Tailwind, using Google SSO for the login.",
+      description3: "... devOps implement CI/CD pipeline using GitHub Actions, with build (push, pull request) and release workflows. Kubernetes with Docker containers to manage deployment in my own server",
+      link: "https://smoothsick.arcprojects.es"
+    },
+    {
+      id: 2,
       name: "Gastos",
       image: expenditures,
       technologies: "< KOTLIN & SPRINGBOOT + REACT & TYPESCRIPT />",
@@ -39,7 +49,7 @@ function Projects() {
       link: "https://gastos.arcprojects.es"
     },
     {
-      id: 2,
+      id: 3,
       name: "Movie House",
       image: movies,
       technologies: "< PHP />",
