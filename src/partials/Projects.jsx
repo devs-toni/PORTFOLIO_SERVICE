@@ -28,18 +28,18 @@ function Projects() {
       description3: "... devOps implement CI/CD pipeline using GitHub Actions, with build (push, pull request) and release workflows. Kubernetes with Docker containers to manage deployment in my own server",
       link: "https://bianxi.arcprojects.es"
     },
+    // {
+    //   id: 1,
+    //   name: "Smoothsick",
+    //   image: smoothsick,
+    //   technologies: "< NODE & TYPESCRIPT + REACT />",
+    //   description: "... backend developed with Node, using Typescript, Express.js and Cloudinary, data persistence managed with MongoDB using Atlas and dependencies management with NPM. Clean code, 100% scalable and maintainable",
+    //   description2: "...frontend developed with React and styles implemented with Tailwind, using Google SSO for the login.",
+    //   description3: "... devOps implement CI/CD pipeline using GitHub Actions, with build (push, pull request) and release workflows. Kubernetes with Docker containers to manage deployment in my own server",
+    //   link: "https://smoothsick.arcprojects.es"
+    // },
     {
       id: 1,
-      name: "Smoothsick",
-      image: smoothsick,
-      technologies: "< NODE & TYPESCRIPT + REACT />",
-      description: "... backend developed with Node, using Typescript, Express.js and Cloudinary, data persistence managed with MongoDB using Atlas and dependencies management with NPM. Clean code, 100% scalable and maintainable",
-      description2: "...frontend developed with React and styles implemented with Tailwind, using Google SSO for the login.",
-      description3: "... devOps implement CI/CD pipeline using GitHub Actions, with build (push, pull request) and release workflows. Kubernetes with Docker containers to manage deployment in my own server",
-      link: "https://smoothsick.arcprojects.es"
-    },
-    {
-      id: 2,
       name: "Gastos",
       image: expenditures,
       technologies: "< KOTLIN & SPRINGBOOT + REACT & TYPESCRIPT />",
@@ -48,16 +48,16 @@ function Projects() {
       description3: "... devOps implement CI/CD pipeline using GitHub Actions, with build (push, pull request) and release workflows. Kubernetes with Docker containers to manage deployment in my own server",
       link: "https://gastos.arcprojects.es"
     },
-    {
-      id: 3,
-      name: "Movie House",
-      image: movies,
-      technologies: "< PHP />",
-      description: "... backend developed with PHP using MySQL for data persistence",
-      description2: "... frontend developed with JavaScript, CSS and HTML",
-      description3: "",
-      link: "https://movies.arcprojects.es"
-    }
+    // {
+    //   id: 3,
+    //   name: "Movie House",
+    //   image: movies,
+    //   technologies: "< PHP />",
+    //   description: "... backend developed with PHP using MySQL for data persistence",
+    //   description2: "... frontend developed with JavaScript, CSS and HTML",
+    //   description3: "",
+    //   link: "https://movies.arcprojects.es"
+    // }
   ];
 
   return (
