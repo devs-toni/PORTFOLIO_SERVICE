@@ -1,6 +1,6 @@
 {
   "name": "arcprojects",
-  "version": "0.1.21-SNAPSHOT.0",
+  "version": "0.1.22-SNAPSHOT.0",
   "homepage": "/",
   "scripts": {
     "dev": "vite --host",
