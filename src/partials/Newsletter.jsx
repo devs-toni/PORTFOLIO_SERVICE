@@ -1,26 +1,67 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { useForm } from '../hooks/useForm';
 import Loader from './Loader';
-
-const initialForm = {
-  email: '',
-  comments: ''
-}
+import { useForm } from 'react-hook-form';
+import { useState } from 'react';
+import Swal from 'sweetalert2';
+import { helpHttp } from '../helpers/helpHttp'
 
 const Newsletter = () => {
 
   const { text } = useLanguage();
+  const [response, setResponse] = useState(undefined);
+  const [isLoading, setIsLoading] = useState(false)
+
+  const initialForm = {
+    email: '',
+    comments: ''
+  }
 
   const {
-    form,
-    errors,
-    loading,
-    response,
-    handleChange,
+    register,
     handleSubmit,
-    handleBlur
-  } = useForm(initialForm);
+    formState: { errors },
+  } = useForm(initialForm)
+
+  const onSubmit = (data) => {
+    setIsLoading(true)
+    helpHttp().post('https://formsubmit.co/ajax/devs.toni@gmail.com', {
+      body: data,
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      }
+    }).then(res => {
+      console.log("WEEEE");
+      console.log(res);
+      setResponse(res);
+      Toast.fire({
+        icon: 'success',
+        title: 'Email sent successfully!'
+      })
+      setIsLoading(false)
+
+    }).catch(err => {
+      Toast.fire({
+        icon: 'error',
+        title: err
+      })
+      setIsLoading(false)
+    })
+
+  };
+
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
 
   return (
     <section className='w-5/6 m-auto border border-b-1 border-t-0 border-r-0 border-l-0 border-gray-100 border-opacity-20 z-30'>
@@ -30,10 +71,10 @@ const Newsletter = () => {
         </div>
         <div className="relative bg-purple-600 px-8 md:px-12 mb-4 surface:mb-2 sm:mb-4 top" data-aos="fade-up">
           {
-            loading
-              ?
-              <Loader />
-              :
+             isLoading
+               ?
+               <Loader />
+               :
               <>
                 <div className="absolute right-0 top-0 -ml-40 pointer-events-none" aria-hidden="true">
                   <svg width="238" height="110" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +95,7 @@ const Newsletter = () => {
                   <form
                     action='c400cd5fde0d9fa2a7ea1bc8ea5e5de0'
                     className="w-full lg:w-1/2 pb-4"
-                    onSubmit={handleSubmit}
+                    onSubmit={handleSubmit(onSubmit)}
                   >
                     <div className='w-full flex justify-center'>
                       <textarea
@@ -63,10 +104,9 @@ const Newsletter = () => {
                         className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-2 mb-2 surface:mb-1 text-white placeholder-purple-400 resize-none h-24 text-xs surface:max-w-xs sm:max-w-md md:text-lg lg:text-sm"
                         placeholder={text.contact.msg}
                         aria-label={text.contact.msg}
-                        value={form.comments}
-                        onChange={handleChange}
                         name="comments"
                         required
+                        {...register("comments")}
                       />
                     </div>
                     <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md mt-2">
@@ -75,10 +115,9 @@ const Newsletter = () => {
                         className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 mr-4 rounded-sm px-4 py-2 mb-1 sm:mb-0 sm:mr-2 text-white placeholder-purple-400 text-xs md:text-lg lg:text-sm"
                         placeholder={text.contact.email}
                         aria-label={text.contact.email}
-                        value={form.email}
-                        onChange={handleChange}
                         name="email"
                         required
+                        {...register("email")}
                       />
                       <input
                         type="submit"

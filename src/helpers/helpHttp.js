@@ -1,25 +1,15 @@
 export const helpHttp = () => {
     //Handler Fetch
     const customFetch = (endpoint, options) => {
-        //Headers Configuration
         const defaultHeader = {
             accept: "application/json"
         };
-        //Errors Handler
-        const controller = new AbortController();
-        options.signal = controller.signal;
-        //Method specification
         options.method = options.method || "GET";
-        //Joining headers
         options.headers = options.headers 
             ? {...defaultHeader, ...options.headers} 
             : defaultHeader;
-        //Configuration body
         options.body = JSON.stringify(options.body) || false;
         if (!options.body) delete options.body;
-        //Abort request if doesn't exist answer
-        setTimeout(() => controller.abort(), 2000);
-
 
         return fetch(endpoint, options)
             .then((res) => res.ok ? res.json() : Promise.reject({

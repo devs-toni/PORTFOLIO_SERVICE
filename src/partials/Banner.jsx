@@ -25,10 +25,11 @@ function Banner() {
               </a>{' '}
               <span className="italic px-1.5">or</span>{' '}
               <a
-                className="font-medium hover:underline text-emerald-400"
-                href={cvEng}
+                className="font-medium text-gray-400 hover:cursor-default"
+                href={undefined}
+                aria-disabled={true}
                 rel="noreferrer"
-                download="cv_antonio-rufino-casasus.pdf"
+                //download="cv_antonio-rufino-casasus.pdf"
               >
                 {text.banner.downloadEng}
               </a>
