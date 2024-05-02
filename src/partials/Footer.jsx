@@ -40,6 +40,9 @@ function Footer() {
                     <Link to="https://bianxi.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">BianxiStore</Link>
                   </li>
                   <li className="mb-2">
+                    <Link to="https://smoothsick.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Smoothsick</Link>
+                  </li>
+                  <li className="mb-2">
                     <Link to="https://gastos.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Expenses</Link>
                   </li>
                   {/*<li className="mb-2">
