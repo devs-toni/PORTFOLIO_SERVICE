@@ -45,10 +45,10 @@ function Footer() {
                   <li className="mb-2">
                     <Link to="https://gastos.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Expenses</Link>
                   </li>
-                  {/*<li className="mb-2">
+                  <li className="mb-2">
                     <Link to="https://movies.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">MovieHouse</Link>
                   </li>
-                  <li className="mb-2">
+                  {/*<li className="mb-2">
                     <Link to="https://tasks.arcprojects.es" target="_blank" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">TodoList</Link>
                   </li>
                   <li className="mb-2">

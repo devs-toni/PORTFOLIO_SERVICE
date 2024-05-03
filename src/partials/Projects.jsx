@@ -25,7 +25,7 @@ function Projects() {
       technologies: "< SPRINGBOOT + REACT />",
       description: "... backend developed with SpringBoot, Spring Security and Spring Data with JPA, data persistence managed with MySQL and dependencies management with Maven Lifecycle. Hexagonal arcuitecture and clean code, integration tests with TestContainers to simulate a real database, 100% testable, scalable and maintainable",
       description2: "...frontend developed with React and styles implemented with Sass, using Google SSO and Stripe for the payment",
-      description3: "... devOps implement CI/CD pipeline using GitHub Actions, with build (push, pull request) and release workflows. Kubernetes with Docker containers to manage deployment in my own server",
+      description3: "... devOps implement CI/CD pipeline using GitHub Actions, with build (push, pull request) and release workflows deploying in DockerHub. Portainer to manage deployment in a server with Ubuntu Server in a Proxmox Virtual Environment.",
       link: "https://bianxi.arcprojects.es"
     },
     {
@@ -35,7 +35,7 @@ function Projects() {
       technologies: "< NODE & TYPESCRIPT + REACT />",
       description: "... backend developed with Node, using Typescript, Express.js and Cloudinary, data persistence managed with MongoDB using Atlas and dependencies management with NPM. Clean code, 100% scalable and maintainable",
       description2: "...frontend developed with React and styles implemented with Tailwind, using Google SSO for the login.",
-      description3: "... devOps implement CI/CD pipeline using GitHub Actions, with build (push, pull request) and release workflows. Kubernetes with Docker containers to manage deployment in my own server",
+      description3: "... devOps implement CI/CD pipeline using GitHub Actions, with build (push, pull request) and release workflows deploying in DockerHub. Portainer to manage deployment in a server with Ubuntu Server in a Proxmox Virtual Environment.",
       link: "https://smoothsick.arcprojects.es"
     },
     {
@@ -45,19 +45,19 @@ function Projects() {
       technologies: "< KOTLIN & SPRINGBOOT + REACT & TYPESCRIPT />",
       description: "... backend developed with Kotlink using SpringBoot with Spring Data JPA for data persestence, with MySQL as database and Maven for dependencies management. Hexagonal architecture and clean code, integration tests with TestContainers to simulate a real database, 100% testable, scalable and maintainable",
       description2: "... frontend developed with React, Typescript and styles managed with Tailwind",
-      description3: "... devOps implement CI/CD pipeline using GitHub Actions, with build (push, pull request) and release workflows. Kubernetes with Docker containers to manage deployment in my own server",
+      description3: "... devOps implement CI/CD pipeline using GitHub Actions, with build (push, pull request) and release workflows deploying in DockerHub. Portainer to manage deployment in a server with Ubuntu Server in a Proxmox Virtual Environment.",
       link: "https://gastos.arcprojects.es"
     },
-    // {
-    //   id: 3,
-    //   name: "Movie House",
-    //   image: movies,
-    //   technologies: "< PHP />",
-    //   description: "... backend developed with PHP using MySQL for data persistence",
-    //   description2: "... frontend developed with JavaScript, CSS and HTML",
-    //   description3: "",
-    //   link: "https://movies.arcprojects.es"
-    // }
+    {
+      id: 3,
+      name: "Movie House",
+      image: movies,
+      technologies: "< PHP />",
+      description: "... backend developed with PHP using MySQL for data persistence",
+      description2: "... frontend developed with JavaScript, CSS and HTML",
+      description3: "... devOps implement CI/CD pipeline using GitHub Actions, with Realese workflow deploying in DockerHub. Portainer to manage deployment in a server with Ubuntu Server in a Proxmox Virtual Environment.",
+      link: "https://moviehouse.arcprojects.es"
+    }
   ];
 
   return (
